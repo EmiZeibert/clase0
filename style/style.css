@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*pagina de inicio*/
+.fondo {
+    background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+
+}
+
+/*menu*/
+.menu {
+    background-color: black;
+    width: 100%;
+    height: 60%;
+    padding-top: 90px;
+    gap: 5px;
+
+}
+
+.menu li:hover {
+    transform: scale(1.1);
+
+}
+
+.gridmenu {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 80px 100px 105px 105px;
+    text-align: center;
+
+}
+
+
+.menu li {
+    border-style: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    list-style: none;
+
+
+}
+
+.menu a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 3px;
+    padding-bottom: 3px;
+
+}
+
+.gridmenu a {
+    background-color: rgb(109, 109, 189);
+    background: linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+
+
+}
+
+.redes {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+    
+
+}
+.redes a {
+    text-decoration: none;
+}
+
+/*logo*/
+.logo {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+
+
+}
+
+/*pagina1*/
+
+.grid0 {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: oblique;
+
+}
+
+
+
+.grid0 {
+    display: grid;
+    align-content: center;
+    margin: 10px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "imagen1 imagen2"
+        "imagen3 imagen4"
+    ;
+
+
+}
+
+.imagen1 {
+    grid-area: imagen1;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.texto2 {
+    grid-area: imagen2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+    display: flex;
+    justify-content: center;
+}
+
+.texto4 {
+    grid-area: imagen4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+}
+
+
+.texto2,
+.texto4 {
+    background-color: black;
+    opacity: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+
+
+}
+
+.grid0 img {
+    opacity: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+
+
+}
+
+
+/*whatsapp*/
+
+.whatsapp {
+    display: flex;
+    position: fixed;
+    right: 80px;
+    padding-top: 8px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 55px;
+
+}
+
+
+.whatsapp a {
+
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.whatsapp img {
+    background-color: green;
+    border-radius: 50px;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+/*media queries*/
+@media screen and (max-width: 480px) {
+    .redes {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+
+    }
+
+    .logo {
+        width: 100%;
+
+    }
+
+    .grid0 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+
+}
+@media screen and ( max-width:768px) {
+    .redes {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .menu {
+        grid-template-columns: repeat(4,1fr);
+        align-content: center;
+
+    }
+    .logo {
+        width:100%;
+          
+    }
+    .grid0 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+              
+    }
+    
+}
+
+
+/*pagina de servicios*/
+
+.fondoservicio {
+    background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.servicios {
+    opacity: 0.90;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    justify-items: center;
+
+
+
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    row-gap: 25px;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas:
+        "imagen1 imagen1 imagen2 imagen2"
+        "imagen3 imagen3 imagen5 imaagen5"
+        "imagen4 imagen4 imagen4 imagen4";
+
+}
+
+
+.imagenservicio1 {
+    grid-area: imagen1;
+    display: flex;
+    justify-content: center;
+
+
+
+
+}
+
+.imgenservicio2 {
+    grid-area: imagen2;
+    display: flex;
+    justify-content: center;
+
+
+
+
+
+}
+
+.enviar {
+    grid-area: imagen3;
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.recibir {
+    grid-area: imagen4;
+    display: flex;
+    align-items: center;
+
+
+
+
+}
+
+.deposito {
+    grid-area: imagen5;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.enviar,
+.recibir,
+.deposito {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    color: white;
+    font-style: oblique;
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    opacity: 80%;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 10px;
+
+
+}
+/*media queries*/
+@media screen and (max-width: 480px) {
+    .menu {
+        width: 100%;
+    }
+    .redes {
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+
+    }
+
+    .logo {
+        width: 100%;
+
+    }
+
+     .servicios {
+       display: grid;
+      grid-template-areas:
+      "imagen1" 
+      "imagen2"
+      "imagen3" 
+      ;
+    }
+      .imagenservicio1 {
+        grid-area: imagen1 ;
+        
+
+      }
+      .imagenservicio2 {
+        grid-area: imagen3;
+        
+       
+      }
+
+      .enviar{
+        grid-area: imagen1;
+        background-color: transparent;
+        color: blue;
+        border: none;
+       font-size: large;
+
+       
+       
+       
+      }
+      .recibir {
+        grid-area: imagen3;
+       background-color: transparent;
+        color: blue;
+        border: none;
+        font-size: large;
+        
+        
+      }
+      .deposito {
+        grid-area: imagen2;
+        color: blue;
+        
+        
+      }
+          
+       
+}
+@media screen and ( max-width:768px) {
+    .redes {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .menu {
+        grid-template-columns: repeat(4,1fr);
+        align-content: center;
+
+    }
+    .logo {
+        width:100%;
+          
+    }
+   
+     .imagenservicio1 {
+      display: flex;
+      justify-content: center;
+        width: 50%;
+        
+     }     
+     .imagenservicio2 {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+
+     }
+         .deposito {
+            display: flex;
+           justify-content: center;
+         }     
+    }
+    /*media queries hasta aca*/
+
+/*pagina de ubicacion*/
+
+.fondoubi {
+    background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+
+}
+
+.direccion a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+.ubicacion img {
+    opacity: 0.80;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.direccion {
+    background-color: black;
+    height: 100px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    font-style: oblique;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 60px;
+
+}
+
+/*pagina de contacto*/
+.fondocont {
+    background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+    opacity: 90%;
+
+}
+
+.contactosprincipal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.contactosgrid {
+    background-color: black;
+    outline: 1px solid white;
+    width: 600px;
+    height: 400px;
+    gap: 5px;
+
+}
+
+
+
+
+
+
+.contactosgrid div {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    font-style: oblique;
+    margin: 10px;
+}
+
+.contactosgrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+
+
+
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+h4 {
+    text-align: center;
+    padding: 5px;
+
+}
+
+.datos1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.datos1 input {
+    width: 80%;
+    height: 30px;
+    margin: 10px;
+
+}
+
+.formulario {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+    font-style: oblique;
+    border: 1px solid white;
+
+
+}
+
+.datos1 {
+    background-color: rgb(8, 8, 10);
+    color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+
+
+
+
+
+
+}
+
+.boton {
+
+    height: 30px;
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+}
+
+.fenviar {
+    background-color: red;
+
+
+}
+
+.flimpiar {
+    background-color: red;
+
+}
