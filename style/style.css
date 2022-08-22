@@ -280,6 +280,7 @@
     .logo {
         width: 100%;
 
+
     }
 
     .grid0 {
@@ -319,8 +320,7 @@
 .servicios {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr;
-    row-gap: 25px;
-    grid-template-rows: 2fr 2fr 2fr;
+        grid-template-rows: 2fr 2fr 2fr;
     grid-template-areas:
         "imagen1 imagen1 imagen2 imagen2"
         "imagen3 imagen3 imagen5 imaagen5"
@@ -397,498 +397,530 @@
 
 }
 
-/*media queries*/
-@media screen and (max-width: 480px) {
-    .menu {
-        width: 100%;
+
+
+
+
+
+
+    /*media queries*/
+    @media screen and (max-width: 480px) {
+        .menu {
+            width: 100%;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+
+        }
+
+        .logo {
+            width: 100%;
+
+        }
+
+        .servicios>div {
+            max-width: 480px;
+            align-content: center;
+        }
+
+        .servicios {
+            display: grid;
+
+            grid-template-areas:
+                "imagen1"
+                "imagen2"
+                "imagen3"
+            ;
+        }
+
+        .imagenservicio1 {
+            grid-area: imagen1;
+            opacity: 60%;
+            width: 100%;
+
+
+
+        }
+
+        .imagenservicio2 {
+            grid-area: imagen3;
+            opacity: 60%;
+
+
+
+        }
+
+        .enviar {
+            grid-area: imagen1;
+            background-color: transparent;
+            color: rgb(15, 15, 255);
+            border: none;
+            font-size: large;
+
+
+        }
+
+        .recibir {
+            grid-area: imagen3;
+            background-color: transparent;
+            color: blue;
+            border: none;
+            font-size: large;
+
+
+
+        }
+
+        .deposito {
+            grid-area: imagen2;
+            color: blue;
+            background: linear-gradient(black, white);
+
+
+        }
+
+        .enviar:hover .animacionenv {
+
+            transform: translateY(7em);
+
+
+        }
+
+        .animacionenv {
+            transform: translateY(2);
+            transition: transform 0.5s ease;
+            background: linear-gradient(to bottom, black 30%, white);
+            border-radius: 4px;
+
+        }
+
+        .recibir:hover {
+            transform: translateY(7em);
+
+        }
+
+        .animacionrec {
+            transform: translateY(2);
+            transition: transform 0.5s ease;
+            background: linear-gradient(to bottom, black, white);
+            border-radius: 4px;
+
+        }
     }
 
-    .redes {
-        display: flex;
-        justify-content: flex-start;
-        padding: 10px;
+    @media screen and (max-width:768px) {
+        .redes {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
 
+        .menu {
+            grid-template-columns: repeat(4, 1fr);
+            align-content: center;
+
+        }
+
+        .logo {
+            width: 100%;
+
+        }
+
+        .servicios {
+            display: grid;
+            grid-template-areas:
+                "imagen1"
+                "imagen2"
+                "imagen3"
+            ;
+
+        }
+
+        .imagenservicio1 {
+            grid-area: imagen1;
+            opacity: 60%;
+
+
+
+
+        }
+
+        .imagenservicio2 {
+            grid-area: imagen3;
+
+
+        }
+
+        .enviar {
+            grid-area: imagen1;
+            background-color: transparent;
+            color: rgb(15, 15, 255);
+            border: none;
+            font-size: large;
+
+        }
+
+        .recibir {
+            grid-area: imagen3;
+            background-color: transparent;
+            color: blue;
+            border: none;
+            font-size: large;
+
+        }
+
+        .deposito {
+            grid-area: imagen2;
+            color: blue;
+            background: linear-gradient(black, white);
+
+
+        }
+
+        .enviar:hover .animacionenv {
+
+            transform: translateY(7em);
+
+
+        }
+
+        .animacionenv {
+            transform: translateY(2);
+            transition: transform 0.5s ease;
+            background: linear-gradient(to bottom, black 30%, white);
+            border-radius: 4px;
+
+        }
+
+        .recibir:hover {
+            transform: translateY(7em);
+
+        }
+
+        .animacionrec {
+            transform: translateY(2);
+            transition: transform 0.5s ease;
+            background: linear-gradient(to bottom, black, white);
+            border-radius: 4px;
+
+        }
     }
 
-    .logo {
-        width: 100%;
-
-    }
-
-    .servicios {
-        display: grid;
-        grid-template-areas:
-            "imagen1"
-            "imagen2"
-            "imagen3"
-        ;
-    }
-
-    .imagenservicio1 {
-        grid-area: imagen1;
-        opacity: 60%;
-
-
-    }
-
-    .imagenservicio2 {
-        grid-area: imagen3;
-
-
-    }
-
-    .enviar {
-        grid-area: imagen1;
-        background-color: transparent;
-        color: rgb(15, 15, 255);
-        border: none;
-        font-size: large;
-
-
-    }
-
-    .recibir {
-        grid-area: imagen3;
-        background-color: transparent;
-        color: blue;
-        border: none;
-        font-size: large;
-
-
-
-    }
-
-    .deposito {
-        grid-area: imagen2;
-        color: blue;
-        background: linear-gradient(black, white);
-
-
-    }
-
-    .enviar:hover .animacionenv {
-
-        transform: translateY(7em);
-
-
-    }
-
-    .animacionenv {
-        transform: translateY(2);
-        transition: transform 0.5s ease;
-        background: linear-gradient(to bottom, black 30%, white);
-        border-radius: 4px;
-
-    }
-
-    .recibir:hover {
-        transform: translateY(7em);
-
-    }
-
-    .animacionrec {
-        transform: translateY(2);
-        transition: transform 0.5s ease;
-        background: linear-gradient(to bottom, black, white);
-        border-radius: 4px;
-
-    }
-}
-
-@media screen and (max-width:768px) {
-    .redes {
-        display: flex;
-        justify-content: center;
-        padding-top: 10px;
-    }
-
-    .menu {
-        grid-template-columns: repeat(4, 1fr);
-        align-content: center;
-
-    }
-
-    .logo {
-        width: 100%;
-
-    }
-
-    .servicios {
-        display: grid;
-        grid-template-areas:
-            "imagen1"
-            "imagen2"
-            "imagen3"
-        ;
-
-    }
-.servicios{
-   position: relative;
-   left: 20%;
-    
-    
-    
-}
-
-    .imagenservicio1 {
-        grid-area: imagen1;
-        opacity: 60%;
-
-
-
-
-    }
-
-    .imagenservicio2 {
-        grid-area: imagen3;
-
-
-    }
-
-    .enviar {
-        grid-area: imagen1;
-        background-color: transparent;
-        color: rgb(15, 15, 255);
-        border: none;
-        font-size: large;
-
-    }
-
-    .recibir {
-        grid-area: imagen3;
-        background-color: transparent;
-        color: blue;
-        border: none;
-        font-size: large;
-
-    }
-
-    .deposito {
-        grid-area: imagen2;
-        color: blue;
-        background: linear-gradient(black, white);
-
-
-    }
-
-    .enviar:hover .animacionenv {
-
-        transform: translateY(7em);
-
-
-    }
-
-    .animacionenv {
-        transform: translateY(2);
-        transition: transform 0.5s ease;
-        background: linear-gradient(to bottom, black 30%, white);
-        border-radius: 4px;
-
-    }
-
-    .recibir:hover {
-        transform: translateY(7em);
-
-    }
-
-    .animacionrec {
-        transform: translateY(2);
-        transition: transform 0.5s ease;
-        background: linear-gradient(to bottom, black, white);
-        border-radius: 4px;
-
-    }
-}
-
-/*media queries hasta aca*/
-
-/*pagina de ubicacion*/
-
-.fondoubi {
-    background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
-    opacity: 90%;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
-
-.ubicacion {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    padding: 30px;
-
-}
-
-.direccion a {
-    outline: none;
-    text-decoration: none;
-    color: white;
-
-}
-
-
-.ubicacion img {
-    opacity: 0.80;
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
-}
-
-.direccion {
-    background-color: black;
-    height: 100px;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-size: 15px;
-    font-style: oblique;
-    text-align: center;
-    padding-top: 30px;
-    margin-top: 60px;
-
-}
-
-/*media queries*/
-@media screen and (max-width: 480px) {
-    .redes {
-        display: flex;
-        justify-content: flex-start;
-        padding: 10px;
-
-    }
-
-    .logo {
-        width: 100%;
+    /*media queries hasta aca*/
+
+    /*pagina de ubicacion*/
+
+    .fondoubi {
+        background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+        opacity: 90%;
+        background-size: cover;
+        background-repeat: no-repeat;
 
     }
 
     .ubicacion {
         display: flex;
-        flex-direction: column;
-
-    }
-
-
-
-}
-
-@media screen and (max-width:768px) {
-    .redes {
-        display: flex;
         justify-content: center;
-        padding-top: 10px;
-    }
-
-    .menu {
-        grid-template-columns: repeat(4, 1fr);
-        align-content: center;
-
-    }
-
-    .logo {
-        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        padding: 30px;
 
     }
 
+    .direccion a {
+        outline: none;
+        text-decoration: none;
+        color: white;
+
+    }
+
+
+    .ubicacion img {
+        opacity: 0.80;
+        border-style: solid;
+        border-color: white;
+        border-radius: 10px;
+    }
+
+    .direccion {
+        background-color: black;
+        height: 100px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        font-size: 15px;
+        font-style: oblique;
+        text-align: center;
+        padding-top: 30px;
+        margin-top: 60px;
+
+    }
     .ubicacion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        animation-name: rotarubi;
+        animation-duration:2s;
+        animation-iteration-count:initial;
+       
+
+    }
+    @keyframes rotarubi {
+        0% {
+            -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+            -webkit-transform-origin: 100% 0%;
+                    transform-origin: 100% 0%;
+            opacity: 0;
+          }
+          100% {
+            -webkit-transform: rotate(0);
+                    transform: rotate(0);
+            -webkit-transform-origin: 100% 0%;
+                    transform-origin: 100% 0%;
+            opacity: 1;
+          }
+    }
+
+    /*media queries*/
+    @media screen and (max-width: 480px) {
+        .redes {
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+
+        }
+
+        .logo {
+            width: 100%;
+
+        }
+
+        .ubicacion {
+            display: flex;
+            flex-direction: column;
+
+        }
+
 
 
     }
 
-}
+    @media screen and (max-width:768px) {
+        .redes {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
 
-/*pagina de contacto*/
-.fondocont {
-    background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
-    opacity: 90%;
+        .menu {
+            grid-template-columns: repeat(4, 1fr);
+            align-content: center;
 
-}
+        }
 
-.contactosprincipal {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-}
+        .logo {
+            width: 100%;
 
-.contactosgrid {
-    background-color: black;
-    outline: 1px solid white;
-    width: 550px;
-    height: 400px;
-    gap: 5px;
+        }
 
-}
+        .ubicacion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
 
-.contactosgrid div {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 900;
-    font-size: 20px;
-    font-style: oblique;
-    margin: 10px;
-}
-
-.contactosgrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-
-}
-
-ul {
-    list-style-type: none;
-
-}
-
-h4 {
-    text-align: center;
-    padding: 5px;
-
-}
-
-.datos1 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.datos1 input {
-    width: 80%;
-    height: 30px;
-    margin: 10px;
-
-}
-
-.formulario {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    font-size: 12px;
-    font-style: oblique;
-    border: 1px solid white;
-
-
-}
-
-.datos1 {
-    background-color: rgb(8, 8, 10);
-    color: white;
-    width: 390px;
-    height: 390px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-
-
-}
-
-.boton {
-
-    height: 30px;
-    width: 240px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-self: center;
-}
-
-.fenviar {
-    background-color: red;
-
-
-}
-
-.flimpiar {
-    background-color: red;
-
-}
-
-/*media queries*/
-@media screen and (max-width: 480px) {
-    .redes {
-        display: flex;
-        justify-content: flex-start;
-        padding: 10px;
+        }
 
     }
 
-    .logo {
-        width: 100%;
+    /*pagina de contacto*/
+    .fondocont {
+        background: repeating-linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+        opacity: 90%;
 
     }
 
     .contactosprincipal {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .contactosgrid {
+        background-color: black;
+        outline: 1px solid white;
+        width: 550px;
+        height: 400px;
+        gap: 5px;
+
+    }
+
+
+    .contactosgrid div {
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+        font-style: oblique;
+        margin: 10px;
+    }
+
+    .contactosgrid {
+        display: flex;
         flex-direction: column;
+        justify-content: center;
 
 
     }
 
-    .contactosgrid {
+    ul {
+        list-style-type: none;
+
+    }
+
+    h4 {
+        text-align: center;
+        padding: 5px;
+
+    }
+
+    .datos1 {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .datos1 input {
+        width: 80%;
+        height: 30px;
+        margin: 10px;
 
     }
 
     .formulario {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        font-style: oblique;
+        border: 1px solid white;
+
+
+    }
+
+    .datos1 {
+        background-color: rgb(8, 8, 10);
+        color: white;
+        width: 390px;
+        height: 390px;
         display: flex;
         flex-direction: column;
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width:768px) {
-    .redes {
-        display: flex;
         justify-content: center;
-        padding-top: 10px;
-    }
-
-    .menu {
-        grid-template-columns: repeat(4, 1fr);
         align-content: center;
 
-    }
-
-    .logo {
-        width: 100%;
 
     }
 
-    .contactosprincipal {
+    .boton {
+
+        height: 30px;
+        width: 240px;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        align-self: center;
+    }
 
+    .fenviar {
+        background-color: red;
 
 
     }
 
-    .contactosgrid {
-        width: 100%;
+    .flimpiar {
+        background-color: red;
 
     }
 
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: none;
-        width: 100%;
+    /*media queries*/
+    @media screen and (max-width: 480px) {
+        .redes {
+            display: flex;
+            justify-content: flex-start;
+            padding: 10px;
+
+        }
+
+        .logo {
+            width: 100%;
+
+        }
+
+        .contactosprincipal {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .contactosgrid {
+            width: 100%;
+
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
     }
 
-}
+    @media screen and (max-width:768px) {
+        .redes {
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .menu {
+            grid-template-columns: repeat(4, 1fr);
+            align-content: center;
+
+        }
+
+        .logo {
+            width: 100%;
+
+        }
+
+        .contactosprincipal {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+
+        }
+
+        .contactosgrid {
+            width: 100%;
+
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            width: 100%;
+        }
+
+    }
