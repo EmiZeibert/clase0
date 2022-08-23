@@ -307,7 +307,6 @@
 
 .servicios {
     padding: 20px;
-    border-radius: 5px;
     text-align: center;
     align-items: center;
     display: grid;
@@ -323,8 +322,8 @@
     grid-template-rows: 2fr 2fr 2fr;
     grid-template-areas:
         "imagen1 imagen1 imagen2 imagen2"
-        "imagen3 imagen3 imagen5 imaagen5"
-        "imagen4 imagen4 imagen4 imagen4";
+        "imagen3 imagen3 imagen3 imagen3"
+        ;
 
 }
 
@@ -349,60 +348,38 @@
 
 
 }
-
-.enviar {
+.imagendeposito {
     grid-area: imagen3;
     display: flex;
-    align-items: center;
-
-
-
+    justify-content: center;
 }
+   
 
-.recibir {
-    grid-area: imagen4;
-    display: flex;
-    align-items: center;
-
-
-
-
-}
-
-.deposito {
-    grid-area: imagen5;
-    display: flex;
-    align-items: center;
-
-
-}
-
-.enviar,
-.recibir,
-.deposito {
+.card-text {
+    background-color: black;
+    border-radius: 3px;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     font-size: 15px;
-    color: white;
     font-style: oblique;
-    margin-top: 10px;
-    width: 250px;
-    height: 250px;
-    background-color: black;
-    border: 5px solid white;
-    border-radius: 5px;
-    padding: 10px;
-
-
+ 
+    
+}
+.card {
+   background:linear-gradient(black, rgb(104, 19, 19));
+   
 }
 
-.enviar,
-.recibir,
-.deposito {
+.imagenservicio1,
+.imagenservicio2,
+.imagendeposito {
     animation-name: entrada;
     animation-duration: 2s;
 
 }
+
+
 
 @keyframes entrada {
     0% {
@@ -469,29 +446,11 @@
 
 
     }
-
-    .enviar {
-        grid-area: imagen1;
-        color:blue;
+       
         
-        
-
-
-    }
-
-    .recibir {
-        grid-area: imagen3;
-         color: blue;
-        border: none;
-        font-size: large;
-
-
-
-    }
-
-    .deposito {
+    .imagendeposito {
         grid-area: imagen2;
-        color: blue;
+        
         
 
     }
@@ -533,9 +492,6 @@
         grid-area: imagen1;
         
 
-
-
-
     }
 
     .imagenservicio2 {
@@ -544,59 +500,25 @@
 
     }
 
-    .enviar {
-        grid-area: imagen1;
-        background-color: transparent;
-        color: rgb(15, 15, 255);
-        border: none;
-        font-size: large;
+    
+    
 
-    }
-
-    .recibir {
-        grid-area: imagen3;
-        background-color: transparent;
-        color: blue;
-        border: none;
-        font-size: large;
-
-    }
-
-    .deposito {
+    .imagendeposito {
         grid-area: imagen2;
-        color: blue;
-        background: linear-gradient(black, white);
+       
 
 
     }
-
-    .enviar:hover .animacionenv {
-
-        transform: translateY(7em);
-
-
+    .card-text {
+        
+        background: linear-gradient(black, rgb(65, 76, 105));
     }
 
-    .animacionenv {
-        transform: translateY(2);
-        transition: transform 0.5s ease;
-        background: linear-gradient(to bottom, black 30%, white);
-        border-radius: 4px;
+        
 
-    }
+    
 
-    .recibir:hover {
-        transform: translateY(7em);
-
-    }
-
-    .animacionrec {
-        transform: translateY(2);
-        transition: transform 0.5s ease;
-        background: linear-gradient(to bottom, black, white);
-        border-radius: 4px;
-
-    }
+    
 }
 
 /*media queries hasta aca*/

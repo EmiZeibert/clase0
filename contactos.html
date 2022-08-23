@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactos</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
@@ -66,15 +67,11 @@
                 <input type="text" name="Contacto">
 
             </form>
-            <form action="Comentarios">
-                <label for="Consulta">Ingrese aqui su Consulta</label>
-                <input type="text" name="Consulta">
-            </form>
-            <form action="Terminos y condiciones">
-                <div class="acepto">Acepto terminos y condiciones<input type="checkBox" name="Acepta" value="1"></div>
-
-
-            </form>
+          
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
 
             <form action="Formulario de contacto" class="boton">
                 <input class="fenviar" type="submit" value="Enviar">
@@ -93,11 +90,12 @@
             <a href="https://web.whatsapp.com/+5493465404708">Whatsapp</a>
             <img src="./imagenes/whatsapp-logo.png" alt="whatsapp" width="50">
         </div>
-
-        <footer class="copy">Copy 2022</footer>
+<div class="copy">
+        <footer >Copy 2022</footer>
+    </div>
     </section>
 
-
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
