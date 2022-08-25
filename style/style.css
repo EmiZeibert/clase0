@@ -420,9 +420,7 @@
 
     .servicios {
         display: grid;
-        position: relative;
-        left: 20%;
-        align-content: center;
+        width: 100%;
         grid-template-areas:
             "imagen1"
             "imagen2"
@@ -432,18 +430,19 @@
 
     .imagenservicio1 {
         grid-area: imagen1;
+        width: 50%;
 
     }
 
     .imagenservicio2 {
         grid-area: imagen3;
-
+        width: 50%;
     }
 
 
     .imagendeposito {
         grid-area: imagen2;
-
+        width: 50%;
     }
 
 
