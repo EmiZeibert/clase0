@@ -468,9 +468,7 @@
     }
     
     .servicios {
-        display: grid;
-        position: relative;
-        left: 35%;
+        display: grid;       
         grid-template-areas:
             "imagen1"
             "imagen2"
