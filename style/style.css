@@ -229,8 +229,7 @@
 }
 
 .copy {
-    display: flex;
-    justify-content: center;
+    
     text-align: center;
     padding-top: 40px;
     font-size: 10px;
@@ -319,19 +318,18 @@
 .servicios {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr ;
     grid-template-areas:
         "imagen1 imagen1 imagen2 imagen2"
         "imagen3 imagen3 imagen3 imagen3"
-        ;
+    ;
 
 }
 
 
 .imagenservicio1 {
     grid-area: imagen1;
-    display: flex;
-    justify-content: center;
+    
 
 
 
@@ -340,20 +338,19 @@
 
 .imgenservicio2 {
     grid-area: imagen2;
-    display: flex;
-    justify-content: center;
+    
 
 
 
 
 
 }
+
 .imagendeposito {
     grid-area: imagen3;
-    display: flex;
-    justify-content: center;
+    
 }
-   
+
 
 .card-text {
     background-color: black;
@@ -363,12 +360,13 @@
     font-weight: 900;
     font-size: 15px;
     font-style: oblique;
- 
-    
+
+
 }
+
 .card {
-   background:linear-gradient(black, rgb(104, 19, 19));
-   
+    background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
+
 }
 
 .imagenservicio1,
@@ -385,13 +383,13 @@
     0% {
         -webkit-transform: scaleY(0);
         transform: scaleY(0);
-        
+
     }
 
     100% {
         -webkit-transform: scaleY(1);
         transform: scaleY(1);
-        
+
     }
 }
 
@@ -418,14 +416,13 @@
 
     }
 
-    .servicios>div {
-        max-width: 480px;
-        align-content: center;
-    }
+
 
     .servicios {
         display: grid;
-
+        position: relative;
+        left: 20%;
+        align-content: center;
         grid-template-areas:
             "imagen1"
             "imagen2"
@@ -435,29 +432,21 @@
 
     .imagenservicio1 {
         grid-area: imagen1;
-        
-
-
 
     }
 
     .imagenservicio2 {
         grid-area: imagen3;
 
-
     }
-       
-        
+
+
     .imagendeposito {
         grid-area: imagen2;
-        
-        
 
     }
-    
-    
 
-    
+
 }
 
 @media screen and (max-width:768px) {
@@ -477,9 +466,11 @@
         width: 100%;
 
     }
-
+    
     .servicios {
         display: grid;
+        position: relative;
+        left: 35%;
         grid-template-areas:
             "imagen1"
             "imagen2"
@@ -490,38 +481,26 @@
 
     .imagenservicio1 {
         grid-area: imagen1;
-        
 
     }
 
     .imagenservicio2 {
         grid-area: imagen3;
 
-
     }
-
-    
-    
 
     .imagendeposito {
         grid-area: imagen2;
-       
-
 
     }
+
     .card-text {
-        
+
         background: linear-gradient(black, rgb(65, 76, 105));
     }
+   
 
-        
-
-    
-
-    
 }
-
-/*media queries hasta aca*/
 
 /*pagina de ubicacion*/
 
@@ -661,47 +640,27 @@
 
 .contactosprincipal {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
     padding: 10px;
+    
 }
 
-.contactosgrid {
-    background-color: black;
-    outline: 1px solid white;
-    width: 550px;
-    height: 400px;
-    gap: 5px;
-
-}
-
-
-.contactosgrid div {
-    color: white;
+.cardcontacto{
+    display: flex;
+    justify-content: center;
     font-family: 'Oswald', sans-serif;
     font-weight: 900;
     font-size: 20px;
     font-style: oblique;
-    margin: 10px;
-}
-
-.contactosgrid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+    margin: 10px;  
 
 }
 
 ul {
     list-style-type: none;
-
-}
-
-h4 {
-    text-align: center;
-    padding: 5px;
+    
 
 }
 
@@ -730,6 +689,14 @@ h4 {
 
 
 }
+.formulariotexto{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    color: red;
+    font-style: oblique;
+}
+
 
 .datos1 {
     background-color: rgb(8, 8, 10);
@@ -786,7 +753,7 @@ h4 {
 
     }
 
-    .contactosgrid {
+    .cardcontacto {
         width: 100%;
 
     }
@@ -826,7 +793,7 @@ h4 {
 
     }
 
-    .contactosgrid {
+    .cardcontacto{
         width: 100%;
 
     }
