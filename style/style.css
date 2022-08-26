@@ -556,6 +556,16 @@
 
 
 }
+h3 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    font-style: oblique;
+    text-align: center;
+    
+    
+}
 
 @keyframes rotarubi {
     0% {
