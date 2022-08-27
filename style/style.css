@@ -243,6 +243,7 @@
 
 /*media queries*/
 @media screen and (max-width: 480px) {
+
     .redes {
         display: flex;
         justify-content: flex-start;
@@ -664,7 +665,10 @@ h3 {
     margin: 10px;  
 
 }
-
+.list-group:hover{
+    background: linear-gradient(black, red);
+    
+}
 ul {
     list-style-type: none;
     
