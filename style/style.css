@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Oswald:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400 & family= Open+Sans:wght@400; 500;600 & family= Oswald:wght@300;400;500;600;700 & display=swap');
 
 * {
     margin: 0;
@@ -103,8 +102,8 @@
     border: none;
     border-radius: 10px;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
+    font-family: sans-serif;
+    font-weight: 600;
     font-size: 20px;
     font-style: oblique;
 
@@ -201,7 +200,7 @@
 .whatsapp a {
 
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 15px;
     font-style: oblique;
@@ -220,9 +219,9 @@
     font-size: 10px;
     background-color: black;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 25px;
     font-style: oblique;
 }
 
@@ -327,9 +326,9 @@
     background:linear-gradient(black, gray) ;
     border-radius: 3px;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 17px;
     font-style: oblique;
     
 }
@@ -496,9 +495,9 @@ background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
     background-color: black;
     height: 100px;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     font-style: oblique;
     text-align: center;
     padding-top: 30px;
@@ -508,9 +507,9 @@ background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
 
 h3 {
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
-    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     font-style: oblique;
     text-align: center;
     
@@ -543,7 +542,6 @@ h3 {
 
     }
 
-
 }
 
 @media screen and (max-width:768px) {
@@ -569,7 +567,6 @@ h3 {
         flex-direction: column;
         align-items: center;
 
-
     }
 
 }
@@ -593,9 +590,9 @@ h3 {
 .cardcontacto{
     display: flex;
     justify-content: center;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 900;
-    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 18px;
     font-style: oblique;
     margin: 10px;  
 
@@ -615,7 +612,6 @@ ul {
     text-align: center;
 
 }
-
 .datos1 input {
     width: 80%;
     height: 30px;
@@ -624,22 +620,21 @@ ul {
 }
 
 .formulario {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
     font-style: oblique;
     border: 1px solid white;
 
 
 }
 .formulariotexto{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 800;
-    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
     color: red;
     font-style: oblique;
 }
-
 
 .datos1 {
     background-color: rgb(8, 8, 10);
@@ -650,7 +645,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
 
 }
 
@@ -664,11 +658,16 @@ ul {
     align-self: center;
 }
 
+
 .fenviar {
     background-color: red;
 
 
 }
+.fenviar:valid{
+
+}
+
 
 .flimpiar {
     background-color: red;
