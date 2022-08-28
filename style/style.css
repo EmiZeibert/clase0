@@ -10,13 +10,10 @@
 
 /*pagina de inicio*/
 .fondo {
-    background: rgb(162, 37, 37);
     background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
     opacity: 90%;
     background-size: cover;
     background-repeat: no-repeat;
-
-
 
 }
 
@@ -52,7 +49,6 @@
     font-size: 20px;
     list-style: none;
 
-
 }
 
 .menu a {
@@ -68,11 +64,10 @@
 
 .gridmenu a {
     background-color: rgb(109, 109, 189);
-    background: linear-gradient(rgb(107, 16, 16), rgb(8, 87, 107), rgb(107, 16, 16));
+    background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
     border: none;
     border-radius: 10px;
     text-decoration: none;
-
 
 }
 
@@ -84,7 +79,6 @@
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 20px;
-
 
 }
 
@@ -99,8 +93,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-
-
 
 }
 
@@ -117,8 +109,6 @@
     font-style: oblique;
 
 }
-
-
 
 .grid0 {
     display: grid;
@@ -139,7 +129,6 @@
     grid-area: imagen1;
     display: flex;
     justify-content: center;
-
 
 }
 
@@ -176,14 +165,12 @@
     border: 5px solid white;
     border-radius: 10px;
 
-
 }
 
 .grid0 img {
     opacity: 90%;
     border: 5px solid white;
     border-radius: 10px;
-
 
 }
 
@@ -196,7 +183,6 @@
     transform: scale(1.1);
     background: linear-gradient(to top, rgb(8, 8, 109), rgb(107, 164, 211));
 }
-
 
 /*whatsapp*/
 
@@ -211,7 +197,6 @@
     bottom: 55px;
 
 }
-
 
 .whatsapp a {
 
@@ -293,7 +278,6 @@
 
 }
 
-
 /*pagina de servicios*/
 
 .fondoservicio {
@@ -301,7 +285,6 @@
     background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
     background-size: cover;
     background-repeat: no-repeat;
-
 
 }
 
@@ -311,8 +294,6 @@
     align-items: center;
     display: grid;
     justify-items: center;
-
-
 
 }
 
@@ -327,24 +308,14 @@
 
 }
 
-
 .imagenservicio1 {
     grid-area: imagen1;
-    
-
-
-
-
+   
 }
 
 .imgenservicio2 {
     grid-area: imagen2;
-    
-
-
-
-
-
+  
 }
 
 .imagendeposito {
@@ -352,21 +323,25 @@
     
 }
 
-
 .card-text {
-    background-color: black;
+    background:linear-gradient(black, gray) ;
     border-radius: 3px;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     font-size: 15px;
     font-style: oblique;
-
-
+    
 }
-
+.card-text:hover{
+    transform: scale(1.1);
+    
+}
 .card {
-    background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
+background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
+
+    
+   
 
 }
 
@@ -375,9 +350,8 @@
 .imagendeposito {
     animation-name: entrada;
     animation-duration: 2s;
-
+    
 }
-
 
 
 @keyframes entrada {
@@ -511,29 +485,11 @@
 
 }
 
-.ubicacion {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-    padding: 30px;
-
-}
-
 .direccion a {
     outline: none;
     text-decoration: none;
     color: white;
 
-}
-
-
-.ubicacion img {
-    border-style: solid;
-    border-color: white;
-    border-radius: 10px;
 }
 
 .direccion {
@@ -550,13 +506,6 @@
 
 }
 
-.ubicacion {
-    animation-name: rotarubi;
-    animation-duration: 2s;
-    animation-iteration-count: initial;
-
-
-}
 h3 {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -567,24 +516,12 @@ h3 {
     
     
 }
+.videos-goar{
+    width: 100%;
+    
+ }
 
-@keyframes rotarubi {
-    0% {
-        -webkit-transform: rotate(-45deg);
-        transform: rotate(-45deg);
-        -webkit-transform-origin: 100% 0%;
-        transform-origin: 100% 0%;
-        opacity: 0;
-    }
 
-    100% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-        -webkit-transform-origin: 100% 0%;
-        transform-origin: 100% 0%;
-        opacity: 1;
-    }
-}
 
 /*media queries*/
 @media screen and (max-width: 480px) {
@@ -600,12 +537,11 @@ h3 {
 
     }
 
-    .ubicacion {
-        display: flex;
-        flex-direction: column;
+    .videos-goar{
+       width: 100%;
+       
 
     }
-
 
 
 }
@@ -640,8 +576,7 @@ h3 {
 
 /*pagina de contacto*/
 .fondocont {
-    background: rgb(162, 37, 37);
-    background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
+        background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
     opacity: 90%;
 
 }
@@ -665,10 +600,7 @@ h3 {
     margin: 10px;  
 
 }
-.list-group:hover{
-    background: linear-gradient(black, red);
-    
-}
+
 ul {
     list-style-type: none;
     
