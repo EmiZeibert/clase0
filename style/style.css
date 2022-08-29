@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400 & family= Open+Sans:wght@400; 500;600 & family= Oswald:wght@300;400;500;600;700 & display=swap');
 
 * {
@@ -6,7 +5,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*pseudoelementos*/
+*::selection {
+    background: black;
+    color: blue;
+}
 /*pagina de inicio*/
 .fondo {
     background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
@@ -29,6 +32,7 @@
 .menu li:hover {
     transform: scale(1.1);
 
+
 }
 
 .gridmenu {
@@ -38,18 +42,6 @@
     text-align: center;
 
 }
-
-
-.menu li {
-    border-style: none;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 900;
-    font-size: 20px;
-    list-style: none;
-
-}
-
 .menu a {
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -58,7 +50,6 @@
     margin-left: 5px;
     padding: 3px;
     padding-bottom: 3px;
-
 }
 
 .gridmenu a {
@@ -67,7 +58,6 @@
     border: none;
     border-radius: 10px;
     text-decoration: none;
-
 }
 
 .redes {
@@ -78,7 +68,6 @@
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 20px;
-
 }
 
 .redes a {
@@ -93,6 +82,63 @@
     justify-content: center;
     align-content: center;
 
+}
+/*animacion*/
+.logo {
+    animation-name: rebote;
+    animation-duration:4s;
+}
+@keyframes rebote {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
 }
 
 /*pagina1*/
@@ -155,7 +201,12 @@
     width: 450px;
     height: 450px;
 }
+.grid0 img {
+    opacity: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
 
+}
 
 .texto2,
 .texto4 {
@@ -165,24 +216,37 @@
     border-radius: 10px;
 
 }
-
-.grid0 img {
-    opacity: 90%;
-    border: 5px solid white;
-    border-radius: 10px;
-
-}
-
+/*animacion*/
 .texto2:hover {
     transform: scale(1.1);
     background: linear-gradient(to bottom, rgb(8, 8, 109), rgb(107, 164, 211));
 }
-
 .texto4:hover {
     transform: scale(1.1);
     background: linear-gradient(to top, rgb(8, 8, 109), rgb(107, 164, 211));
 }
 
+h5 {
+    animation-name:entradatexto;
+    animation-duration: 2s;
+}
+@-webkit-keyframes entradatexto {
+    0% {
+        -webkit-transform: rotateY(-100deg);
+                transform: rotateY(-100deg);
+        -webkit-transform-origin: right;
+                transform-origin: right;
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: rotateY(0);
+                transform: rotateY(0);
+        -webkit-transform-origin: right;
+                transform-origin: right;
+        opacity: 1;
+      }
+               
+    }
 /*whatsapp*/
 
 .whatsapp {
@@ -213,7 +277,7 @@
 }
 
 .copy {
-    
+
     text-align: center;
     padding-top: 40px;
     font-size: 10px;
@@ -295,11 +359,15 @@
     justify-items: center;
 
 }
+.servicios> .card {
+    display: flex;
+    align-content: center;
+}
 
 .servicios {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr 1fr;
-    grid-template-rows: 2fr 2fr 2fr ;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "imagen1 imagen1 imagen2 imagen2"
         "imagen3 imagen3 imagen3 imagen3"
@@ -309,49 +377,53 @@
 
 .imagenservicio1 {
     grid-area: imagen1;
-   
+
 }
 
 .imgenservicio2 {
     grid-area: imagen2;
-  
+    
+    
+
 }
 
 .imagendeposito {
     grid-area: imagen3;
-    
+
 }
 
 .card-text {
-    background:linear-gradient(black, gray) ;
+    background: linear-gradient(black, gray);
     border-radius: 3px;
     color: white;
     font-family: sans-serif;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
     font-style: oblique;
     
+
 }
-.card-text:hover{
+
+.card-text:hover {
     transform: scale(1.1);
-    
+
 }
+
 .card {
-background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
-
+    background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
     
+    }
+
    
-
-}
-
+/*animacion*/
 .imagenservicio1,
 .imagenservicio2,
 .imagendeposito {
     animation-name: entrada;
     animation-duration: 2s;
     
-}
 
+}
 
 @keyframes entrada {
     0% {
@@ -366,11 +438,6 @@ background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
 
     }
 }
-
-
-
-
-
 
 /*media queries*/
 @media screen and (max-width: 480px) {
@@ -389,9 +456,6 @@ background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
         width: 100%;
 
     }
-
-
-
     .servicios {
         display: grid;
         width: 100%;
@@ -439,9 +503,9 @@ background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
         width: 100%;
 
     }
-    
+
     .servicios {
-        display: grid;       
+        display: grid;
         grid-template-areas:
             "imagen1"
             "imagen2"
@@ -469,7 +533,7 @@ background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
 
         background: linear-gradient(black, rgb(65, 76, 105));
     }
-   
+
 
 }
 
@@ -512,15 +576,14 @@ h3 {
     font-size: 20px;
     font-style: oblique;
     text-align: center;
-    
-    
+
+
 }
-.videos-goar{
+
+.videos-goar {
     width: 100%;
-    
- }
 
-
+}
 
 /*media queries*/
 @media screen and (max-width: 480px) {
@@ -536,9 +599,9 @@ h3 {
 
     }
 
-    .videos-goar{
-       width: 100%;
-       
+    .videos-goar {
+        width: 100%;
+
 
     }
 
@@ -573,7 +636,7 @@ h3 {
 
 /*pagina de contacto*/
 .fondocont {
-        background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
+    background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
     opacity: 90%;
 
 }
@@ -584,23 +647,22 @@ h3 {
     align-items: center;
     gap: 10px;
     padding: 10px;
-    
-}
 
-.cardcontacto{
+}
+.cardcontacto {
     display: flex;
     justify-content: center;
     font-family: sans-serif;
     font-weight: 600;
     font-size: 18px;
     font-style: oblique;
-    margin: 10px;  
+    margin: 10px;
 
 }
 
 ul {
     list-style-type: none;
-    
+
 
 }
 
@@ -612,6 +674,7 @@ ul {
     text-align: center;
 
 }
+
 .datos1 input {
     width: 80%;
     height: 30px;
@@ -628,7 +691,8 @@ ul {
 
 
 }
-.formulariotexto{
+
+.formulariotexto {
     font-family: sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -658,21 +722,17 @@ ul {
     align-self: center;
 }
 
-
 .fenviar {
     background-color: red;
-
-
 }
-.fenviar:valid{
-
-}
-
 
 .flimpiar {
     background-color: red;
-
 }
+.input:focus{
+    background-color:blue;
+}
+
 
 /*media queries*/
 @media screen and (max-width: 480px) {
@@ -735,7 +795,7 @@ ul {
 
     }
 
-    .cardcontacto{
+    .cardcontacto {
         width: 100%;
 
     }
