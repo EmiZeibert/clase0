@@ -246,7 +246,7 @@ h5 {
     animation-duration: 2s;
 }
 
-@-webkit-keyframes entradatexto {
+@keyframes entradatexto {
     0% {
         -webkit-transform: rotateY(-100deg);
         transform: rotateY(-100deg);
