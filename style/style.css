@@ -20,7 +20,7 @@
     opacity: 90%;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
 }
 
 /*menu*/
@@ -32,6 +32,7 @@
     gap: 5px;
 
 }
+
 /*no se si esta bien scss*/
 .menu li:hover {
     transform: scale(1.1);
@@ -49,7 +50,7 @@
 
 .menu a {
     color: white;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-weight: 900;
     list-style-type: none;
     margin-left: 5px;
@@ -58,17 +59,18 @@
 }
 
 .gridmenu a {
-    
+
     background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
     border: none;
     border-radius: 10px;
     text-decoration: none;
 }
+
 /*pasado*/
 /*copie hasta aca*/
 
 .redes {
-    
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -77,7 +79,7 @@
 
 .redes a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 /*logo*/
@@ -98,63 +100,48 @@
 
 @keyframes rebote {
     0% {
-        -webkit-transform: translateY(-45px);
-        transform: translateY(-45px);
-        -webkit-animation-timing-function: ease-in;
+        transform: translateY(-500px);
         animation-timing-function: ease-in;
-        opacity: 1;
+        opacity: 0
     }
 
-    24% {
-        opacity: 1;
-    }
-
-    40% {
-        -webkit-transform: translateY(-24px);
-        transform: translateY(-24px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    65% {
-        -webkit-transform: translateY(-12px);
-        transform: translateY(-12px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    82% {
-        -webkit-transform: translateY(-6px);
-        transform: translateY(-6px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    93% {
-        -webkit-transform: translateY(-4px);
-        transform: translateY(-4px);
-        -webkit-animation-timing-function: ease-in;
-        animation-timing-function: ease-in;
-    }
-
-    25%,
-    55%,
-    75%,
-    87% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-        -webkit-animation-timing-function: ease-out;
+    38% {
+        transform: translateY(0);
         animation-timing-function: ease-out;
+        opacity: 1
+    }
+
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in
+    }
+
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in
+    }
+
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out
+    }
+
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in
     }
 
     100% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
-        -webkit-animation-timing-function: ease-out;
-        animation-timing-function: ease-out;
-        opacity: 1;
+        transform: translateY(0);
+        animation-timing-function: ease-out
     }
 }
+
 
 /*pagina1*/
 
@@ -266,6 +253,7 @@ h5 {
         opacity: 1;
     }
 }
+
 /*llegamoshastaaca*/
 
 /*whatsapp*/
@@ -285,7 +273,7 @@ h5 {
 .whatsapp a {
 
     color: white;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 15px;
     font-style: oblique;
@@ -304,7 +292,7 @@ h5 {
     font-size: 10px;
     background-color: black;
     color: white;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 25px;
     font-style: oblique;
@@ -413,12 +401,12 @@ h5 {
     background: linear-gradient(black, gray);
     border-radius: 3px;
     color: white;
-    font-family:sans-serif;
+    font-family: sans-serif;
     font-weight: 600;
     font-size: 15px;
     font-style: oblique;
-    
-    
+
+
 
 }
 
@@ -429,7 +417,7 @@ h5 {
 
 .card {
     background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
-   
+
 
 }
 

@@ -21,7 +21,7 @@
             li {
                 &:hover {
                     transform: scale(1.1);
-                    
+
                 }
 
                 a {
@@ -35,7 +35,7 @@
                     border: none;
                     border-radius: 10px;
                     text-decoration: none;
-                    
+
                 }
 
             }
@@ -54,7 +54,7 @@
 
         a {
             text-decoration: none;
-            color:white;
+            color: white;
         }
     }
 
@@ -64,61 +64,56 @@
         display: flex;
         justify-content: center;
         align-content: center;
-        
+
         animation-name: rebote;
         animation-duration: 4s;
+
         @keyframes rebote {
-             
-                0% {
-                    -webkit-transform: translateY(-45px);
-                    transform: translateY(-45px);
-                    -webkit-animation-timing-function: ease-in;
-                    animation-timing-function: ease-in;
-                    opacity: 1;
-                }      
-                40% {
-                    -webkit-transform: translateY(-24px);
-                    transform: translateY(-24px);
-                    -webkit-animation-timing-function: ease-in;
-                    animation-timing-function: ease-in;
-                }
-                65% {
-                    -webkit-transform: translateY(-12px);
-                    transform: translateY(-12px);
-                    -webkit-animation-timing-function: ease-in;
-                    animation-timing-function: ease-in;
-                }
-                82% {
-                    -webkit-transform: translateY(-6px);
-                    transform: translateY(-6px);
-                    -webkit-animation-timing-function: ease-in;
-                    animation-timing-function: ease-in;
-                }
-                93% {
-                    -webkit-transform: translateY(-4px);
-                    transform: translateY(-4px);
-                    -webkit-animation-timing-function: ease-in;
-                    animation-timing-function: ease-in;
-                }
-                25%,
-                55%,
-                75%,
-                87% {
-                    -webkit-transform: translateY(0px);
-                    transform: translateY(0px);
-                    -webkit-animation-timing-function: ease-out;
-                    animation-timing-function: ease-out;
-                }
-                100% {
-                    -webkit-transform: translateY(0px);
-                    transform: translateY(0px);
-                    -webkit-animation-timing-function: ease-out;
-                    animation-timing-function: ease-out;
-                    opacity: 1;
-                }
-                    
+            0% {
+                transform: translateY(-500px);
+                animation-timing-function: ease-in;
+                opacity: 0
+            }
+        
+            38% {
+                transform: translateY(0);
+                animation-timing-function: ease-out;
+                opacity: 1
+            }
+        
+            55% {
+                transform: translateY(-65px);
+                animation-timing-function: ease-in
+            }
+        
+            72% {
+                transform: translateY(0);
+                animation-timing-function: ease-out
+            }
+        
+            81% {
+                transform: translateY(-28px);
+                animation-timing-function: ease-in
+            }
+        
+            90% {
+                transform: translateY(0);
+                animation-timing-function: ease-out
+            }
+        
+            95% {
+                transform: translateY(-8px);
+                animation-timing-function: ease-in
+            }
+        
+            100% {
+                transform: translateY(0);
+                animation-timing-function: ease-out
+            }
+        
         }
 
 
     }
 }
+
