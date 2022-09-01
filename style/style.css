@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2? family= Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400 & family= Open+Sans:wght@400; 500;600 & family= Oswald:wght@300;400;500;600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@400;500;600;700 & display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /*pseudoelementos*/
@@ -11,6 +12,7 @@
     background: black;
     color: blue;
 }
+
 
 /*pagina de inicio*/
 .fondo {
@@ -30,7 +32,7 @@
     gap: 5px;
 
 }
-
+/*no se si esta bien scss*/
 .menu li:hover {
     transform: scale(1.1);
 
@@ -47,7 +49,7 @@
 
 .menu a {
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family:sans-serif;
     font-weight: 900;
     list-style-type: none;
     margin-left: 5px;
@@ -56,17 +58,17 @@
 }
 
 .gridmenu a {
-    background-color: rgb(109, 109, 189);
+    
     background: linear-gradient(159deg, rgba(162, 37, 37, 1) 28%, rgba(15, 161, 255, 0.958420868347339) 58%, rgba(187, 118, 130, 0.958420868347339) 83%);
     border: none;
     border-radius: 10px;
     text-decoration: none;
 }
+/*pasado*/
+/*copie hasta aca*/
 
 .redes {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 800;
-    font-size: 18px;
+    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -75,6 +77,7 @@
 
 .redes a {
     text-decoration: none;
+    color:white;
 }
 
 /*logo*/
@@ -263,6 +266,7 @@ h5 {
         opacity: 1;
     }
 }
+/*llegamoshastaaca*/
 
 /*whatsapp*/
 
@@ -281,7 +285,7 @@ h5 {
 .whatsapp a {
 
     color: white;
-    font-family: sans-serif;
+    font-family:sans-serif;
     font-weight: 600;
     font-size: 15px;
     font-style: oblique;
@@ -300,7 +304,7 @@ h5 {
     font-size: 10px;
     background-color: black;
     color: white;
-    font-family: sans-serif;
+    font-family:sans-serif;
     font-weight: 600;
     font-size: 25px;
     font-style: oblique;
@@ -409,7 +413,7 @@ h5 {
     background: linear-gradient(black, gray);
     border-radius: 3px;
     color: white;
-    font-family: sans-serif;
+    font-family:sans-serif;
     font-weight: 600;
     font-size: 15px;
     font-style: oblique;

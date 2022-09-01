@@ -1,0 +1,39 @@
+.footer1{
+
+    .whatsapp {
+        display: flex;
+        position: fixed;
+        right: 60px;
+        padding-top: 8px;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        bottom: 55px;
+
+        >a {
+            color: white;
+            font-family:$fontSans;
+            font-weight: 600;
+            font-size: 15px;
+            font-style: oblique;
+            text-decoration: none;
+
+            > img {
+                background-color: green;
+                border-radius: 50px;
+            }
+        }
+    }
+    .copy {
+
+        text-align: center;
+        padding-top: 40px;
+        font-size: 10px;
+        background-color:$secondarycolor;
+        color: white;
+        font-family:$fontSans;
+        font-weight: 600;
+        font-size: 25px;
+        font-style: oblique;
+    }      
+}
