@@ -52,7 +52,6 @@
     color: white;
     font-family: sans-serif;
     font-weight: 900;
-    font-size: 15px;
     list-style-type: none;
     margin-left: 5px;
     padding: 3px;
@@ -300,10 +299,13 @@ h5 {
 /*media queries*/
 @media screen and (max-width: 480px) {
 
-    .redes {
+    .menu {
+       
+
         display: flex;
         justify-content: flex-start;
         padding: 10px;
+   
 
     }
 
@@ -557,7 +559,7 @@ h5 {
     width: 100%;
 }
 
-.direccion a {
+.direccion {
     outline: none;
     text-decoration: none;
     color: white;
@@ -578,7 +580,7 @@ h5 {
 
 }
 
-h3 {
+h5 {
     color: white;
     font-family: sans-serif;
     font-weight: 600;

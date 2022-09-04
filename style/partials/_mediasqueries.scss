@@ -1,46 +1,51 @@
-/*falta media queries*/
-@media screen and (max-width: 480px) {
+$movil-breakpoint-small: 480px;
 
-    .redes {
-        display: flex;
-        justify-content: flex-start;
-        padding: 10px;
-
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .grid0 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-}
-
-@media screen and (max-width:768px) {
-    .redes {
+.menu{
+    .redes{
         display: flex;
         justify-content: center;
-        padding-top: 10px;
+        @media (min-width: $movil-breakpoint-small)  {}
+                               
+        }
     }
-
-    .menu {
-        grid-template-columns: repeat(4, 1fr);
-        align-content: center;
-
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .grid0 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+      
+.logo {
+    width: 100%;
+    justify-content: center;
+    @media (min-width: $movil-breakpoint-small) {}
+    
 }
+.grid0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: $movil-breakpoint-small) {}
+   
+    
+}
+$tablet-breakpoint-small: 768px;
+.menu {
+    grid-template-columns: repeat(4, 1fr);
+   
+    .redes {
+    display: flex;
+    justify-content: center;
+        @media (min-width: $tablet-breakpoint-small)  {}
+    }
+    
+}      
+.logo {
+    width: 100%;   
+    @media (min-width: $tablet-breakpoint-small)  { }
+}    
+.grid0 {
+    >div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-content: center;
+              
+    @media (min-width: $tablet-breakpoint-small)  { }
+}
+}
+/*corregir*/
