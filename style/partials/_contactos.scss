@@ -1,0 +1,86 @@
+.contactosprincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+
+    .cardcontacto {
+        display: flex;
+        justify-content: center;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        font-style: oblique;
+        margin: 10px;
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    .formulario {
+        font-family: $fontSans;
+        font-weight: 600;
+        font-size: 15px;
+        font-style: oblique;
+        border: 1px solid white;
+
+        .datos1 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: $secondarycolor;
+            color: white;
+            width: 390px;
+            height: 390px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            .fenviar {
+                background: red;
+
+            }
+            .flimpiar{
+                background: red;
+            }
+            .input {
+                width: 80%;
+                height: 30px;
+                margin: 10px;
+                
+
+                &:focus {
+                    background-color: blue;
+                }
+                
+            }
+
+            .formulariotexto {
+                font-family: $fontSans;
+                font-weight: 600;
+                font-size: 15px;
+                color: red;
+                font-style: oblique;
+                .boton {
+                    height: 30px;
+                    width: 240px;
+                    display: flex;
+                    flex-direction: row;
+                    align-content: center;
+                    align-self: center;
+                                     
+
+                }
+            }
+
+
+        }
+
+
+    }
+
+}
