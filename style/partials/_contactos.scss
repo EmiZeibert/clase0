@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         font-family: sans-serif;
-        font-weight: 600;
+        font-weight: $font-weight;
         font-size: 18px;
         font-style: oblique;
         margin: 10px;
@@ -21,7 +21,7 @@
 
     .formulario {
         font-family: $fontSans;
-        font-weight: 600;
+        font-weight: $font-weight;
         font-size: 15px;
         font-style: oblique;
         border: 1px solid white;
@@ -40,31 +40,35 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
+
             .fenviar {
                 background: red;
 
             }
-            .flimpiar{
+
+            .flimpiar {
                 background: red;
             }
+
             .input {
                 width: 80%;
                 height: 30px;
                 margin: 10px;
-                
+
 
                 &:focus {
                     background-color: blue;
                 }
-                
+
             }
 
             .formulariotexto {
                 font-family: $fontSans;
-                font-weight: 600;
+                font-weight: $font-weight;
                 font-size: 15px;
                 color: red;
                 font-style: oblique;
+
                 .boton {
                     height: 30px;
                     width: 240px;
@@ -72,7 +76,7 @@
                     flex-direction: row;
                     align-content: center;
                     align-self: center;
-                                     
+
 
                 }
             }
@@ -83,4 +87,31 @@
 
     }
 
+}
+
+$redes: (
+    facebook:blue,
+    instagram:rgb(182, 25, 187),
+    whatsapp:green,
+    envelope:rgb(236, 233, 20)
+);
+
+.fa-facebook {
+    color: blue;
+    
+}
+
+.fa-instagram {
+    color: rgb(182, 25, 187);
+    
+}
+
+.fa-whatsapp {
+    color: green;
+
+}
+
+.fa-envelope {
+    color: rgb(236, 233, 20);
+    
 }

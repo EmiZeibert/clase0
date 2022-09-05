@@ -52,7 +52,7 @@
 .fondo .redes {
   font-family: sans-serif;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 17px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -194,8 +194,6 @@
   text-align: center;
   display: flex;
   align-items: center;
-  width: 450px;
-  height: 450px;
   background-color: black;
   opacity: 90%;
   border: 5px solid white;
@@ -250,8 +248,6 @@
   text-align: center;
   display: flex;
   align-items: center;
-  width: 450px;
-  height: 450px;
   background-color: black;
   opacity: 90%;
   border: 5px solid white;
@@ -280,6 +276,18 @@
   }
 }
 
+.grid0 .texto2 {
+  width: 450px;
+  height: 450px;
+  width: 450px;
+  height: 450px;
+}
+
+.grid0 .texto4 {
+  width: 450px;
+  height: 450px;
+}
+
 .footer1 .whatsapp {
   display: flex;
   position: fixed;
@@ -291,10 +299,10 @@
   bottom: 55px;
 }
 .footer1 .whatsapp > a {
-  color: white;
+  color: green;
   font-family: sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
   font-style: oblique;
   text-decoration: none;
 }
@@ -354,8 +362,13 @@
 .servicios .imagendeposito {
   grid-area: imagen3;
 }
-.servicios > div .card {
-  background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
+.servicios > div .card .card1 {
+  background: linear-gradient(rgb(9, 157, 216) 70%, rgb(230, 22, 22));
+  border-radius: 5px;
+}
+.servicios > div .card .card2 {
+  background: linear-gradient(rgb(230, 22, 22) 70%, rgb(9, 157, 216));
+  border-radius: 5px;
 }
 .servicios > div .card .card-text {
   background: linear-gradient(black, gray);
@@ -470,6 +483,22 @@
   flex-direction: row;
   align-content: center;
   align-self: center;
+}
+
+.fa-facebook {
+  color: blue;
+}
+
+.fa-instagram {
+  color: rgb(182, 25, 187);
+}
+
+.fa-whatsapp {
+  color: green;
+}
+
+.fa-envelope {
+  color: rgb(236, 233, 20);
 }
 
 /*corregir*//*# sourceMappingURL=estilo.css.map */

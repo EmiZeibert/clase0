@@ -39,8 +39,15 @@
     }
     >div {
         .card {
-            background: linear-gradient(rgb(8, 8, 109), rgb(107, 164, 211));
-
+            .card1{
+                background:linear-gradient(rgb(9, 157, 216)70%,rgb(230, 22, 22));
+                border-radius: 5px;
+            }
+            .card2{
+                background:linear-gradient(rgb(230, 22, 22)70%,rgb(9, 157, 216));
+                border-radius: 5px;
+            }     
+  
             .card-text {
                 background: linear-gradient(black, gray);
                 border-radius: 3px;
@@ -49,6 +56,7 @@
                 font-weight: 600;
                 font-size: 15px;
                 font-style: oblique;
+                
 
                 &card-text:hover {
                 transform: scale(1.1);

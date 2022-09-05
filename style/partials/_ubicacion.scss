@@ -4,7 +4,7 @@
         .botonmaps {
             color: white;
             font-family: $fontSans;
-            font-weight: 600;
+            font-weight:$font-weight;
             font-size: 15px;
             font-style: oblique;
             text-align: center;
@@ -15,7 +15,7 @@
     }
 
 
-
+    
 }
 
 .direccion {
@@ -26,7 +26,7 @@
     height: 100px;
     color: white;
     font-family: $fontSans;
-    font-weight: 600;
+    font-weight: $font-weight;
     font-size: 20px;
     font-style: oblique;
     text-align: center;
