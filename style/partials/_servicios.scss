@@ -53,11 +53,10 @@
                 border-radius: 3px;
                 color: white;
                 font-family: $fontSans;
-                font-weight: 600;
+                font-weight: $font-weight;
                 font-size: 15px;
                 font-style: oblique;
                 
-
                 &card-text:hover {
                 transform: scale(1.1);
 

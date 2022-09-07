@@ -13,16 +13,12 @@
         >a {
             color: green;
             font-family:$fontSans;
-            font-weight: 600;
+            font-weight: $font-weight;
             font-size: 18px;
             font-style: oblique;
             text-decoration: none;
 
-            > img {
-                background-color: green;
-                border-radius: 50px;
             }
-        }
     }
     .copy {
 
@@ -32,7 +28,7 @@
         background-color:$secondarycolor;
         color: white;
         font-family:$fontSans;
-        font-weight: 600;
+        font-weight: $font-weight;
         font-size: 25px;
         font-style: oblique;
     }      

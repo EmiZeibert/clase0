@@ -1,2 +1,126 @@
+@media(max-width:480px) {
+    .body {
+        width: 100%;
 
-/*corregir*/
+    }
+
+    .logo {
+        width: 100%;
+
+    }
+
+    .grid0 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .servicios {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-areas:
+            "imagen1"
+            "imagen2"
+            "imagen3"
+        ;
+
+        .imagenservicio1 {
+            grid-area: imagen1;
+        }
+
+        .imagenservicio2 {
+            grid-area: imagen3;
+        }
+
+        .imagendeposito {
+            grid-area: imagen2;
+        }
+    }
+
+    .videos-goar {
+        width: 100%;
+    }
+
+    .contactosprincipal {
+        display: flex;
+        flex-direction: column;
+
+        .cardcontacto {
+            width: 100%;
+        }
+
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media (min-width:480px) and (max-width:728px) {
+    .body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .grid0 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .servicios {
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+            "imagen1"
+            "imagen2"
+            "imagen3"
+        ;
+
+        .imagenservicio1 {
+            grid-area: imagen1;
+        }
+
+        .imagenservicio2 {
+            grid-area: imagen3;
+        }
+
+        .imagendeposito {
+            grid-area: imagen2;
+        }
+    }
+
+    .ubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .contactosprincipal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .cardcontacto {
+            width: 100%;
+
+        }
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        width: 100%;
+    }
+}
