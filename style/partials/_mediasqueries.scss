@@ -1,10 +1,9 @@
 @media(max-width:480px) {
     .body {
         width: 100%;
+        }
 
-    }
-
-    .logo {
+       .logo {
         width: 100%;
 
     }
@@ -13,114 +12,93 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    .servicios {
-        display: grid;
-        width: 100%;
-        justify-content: center;
-        grid-template-areas:
-            "imagen1"
-            "imagen2"
-            "imagen3"
-        ;
-
-        .imagenservicio1 {
-            grid-area: imagen1;
-        }
-
-        .imagenservicio2 {
-            grid-area: imagen3;
-        }
-
-        .imagendeposito {
-            grid-area: imagen2;
-        }
+       
     }
 
     .videos-goar {
         width: 100%;
     }
 
-    .contactosprincipal {
-        display: flex;
-        flex-direction: column;
-
-        .cardcontacto {
-            width: 100%;
-        }
-
-    }
-
     .formulario {
         display: flex;
         flex-direction: column;
+        border: none;
     }
 
 }
+
+@mixin medias-queries ($ancho, $flex, $column) {
+    width: $ancho;
+    display: $flex;
+    flex-direction: $column;
+}
+
+.contactosprincipal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include medias-queries (100%, flex, column);
+}
+
+.contactosprincipal {
+    @include medias-queries(100%, flex, column);
+
+}
+
 
 
 @media (min-width:480px) and (max-width:728px) {
     .body {
         width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+        }
 
     .logo {
         width: 100%;
     }
-
     .grid0 {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
+        
+        }
 
-    .servicios {
-        display: grid;
+       .servicios {
+        gap: 10px;
+    }
+    .videos-goar {
         width: 100%;
-        grid-template-areas:
-            "imagen1"
-            "imagen2"
-            "imagen3"
-        ;
-
-        .imagenservicio1 {
-            grid-area: imagen1;
-        }
-
-        .imagenservicio2 {
-            grid-area: imagen3;
-        }
-
-        .imagendeposito {
-            grid-area: imagen2;
-        }
     }
-
-    .ubicacion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .contactosprincipal {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
+    .contactosprincipal { 
         .cardcontacto {
             width: 100%;
-
         }
     }
+
     .formulario {
         display: flex;
         flex-direction: column;
         align-items: center;
         border: none;
-        width: 100%;
+
     }
+}
+@mixin medias-queries ($ancho, $flex, $column) {
+    width: $ancho;
+    display: $flex;
+    flex-direction: $column;
+}
+
+.ubicacion {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        @include medias-queries (100%, flex, column);
+    }
+
+
+.contactosprincipal {
+    @include medias-queries (100%, flex, column);
+    align-items: center;
 }

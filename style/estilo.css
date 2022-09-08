@@ -517,41 +517,33 @@
     flex-direction: column;
     justify-content: center;
   }
-  .servicios {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    grid-template-areas: "imagen1" "imagen2" "imagen3";
-  }
-  .servicios .imagenservicio1 {
-    grid-area: imagen1;
-  }
-  .servicios .imagenservicio2 {
-    grid-area: imagen3;
-  }
-  .servicios .imagendeposito {
-    grid-area: imagen2;
-  }
   .videos-goar {
-    width: 100%;
-  }
-  .contactosprincipal {
-    display: flex;
-    flex-direction: column;
-  }
-  .contactosprincipal .cardcontacto {
     width: 100%;
   }
   .formulario {
     display: flex;
     flex-direction: column;
+    border: none;
   }
 }
+.contactosprincipal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactosprincipal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 480px) and (max-width: 728px) {
   .body {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
   .logo {
     width: 100%;
@@ -562,28 +554,10 @@
     justify-content: center;
   }
   .servicios {
-    display: grid;
+    gap: 10px;
+  }
+  .videos-goar {
     width: 100%;
-    grid-template-areas: "imagen1" "imagen2" "imagen3";
-  }
-  .servicios .imagenservicio1 {
-    grid-area: imagen1;
-  }
-  .servicios .imagenservicio2 {
-    grid-area: imagen3;
-  }
-  .servicios .imagendeposito {
-    grid-area: imagen2;
-  }
-  .ubicacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contactosprincipal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   .contactosprincipal .cardcontacto {
     width: 100%;
@@ -593,6 +567,20 @@
     flex-direction: column;
     align-items: center;
     border: none;
-    width: 100%;
   }
+}
+.ubicacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactosprincipal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }/*# sourceMappingURL=estilo.css.map */
