@@ -1,18 +1,24 @@
 @media(max-width:480px) {
     .body {
         width: 100%;
-        }
+    }
 
-       .logo {
+    .logo {
         width: 100%;
 
     }
 
     .grid0 {
-       display: grid;
-       grid-template-columns: max-content;
-       align-content: center;     
-           }
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .videos-goar {
         width: 100%;
@@ -47,30 +53,33 @@
 
 
 
-@media (min-width:480px) and (max-width:728px) {
+@media (min-width:480px) and (max-width:768px) {
     .body {
         width: 100%;
-        }
+    }
 
     .logo {
         width: 100%;
     }
+
     .grid0 {
-       display: flex;
-       flex-direction: column;
-       width: auto;       
-        
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 15%;
+        width: 60%;
 
-       
-        }
+    }
 
-       .servicios {
+    .servicios {
         gap: 10px;
     }
+
     .videos-goar {
         width: 100%;
     }
-    .contactosprincipal { 
+
+    .contactosprincipal {
         .cardcontacto {
             width: 100%;
         }
@@ -84,6 +93,7 @@
 
     }
 }
+
 @mixin medias-queries ($ancho, $flex, $column) {
     width: $ancho;
     display: $flex;
@@ -91,12 +101,12 @@
 }
 
 .ubicacion {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    
-        @include medias-queries (100%, flex, column);
-    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include medias-queries (100%, flex, column);
+}
 
 
 .contactosprincipal {
