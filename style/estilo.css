@@ -513,9 +513,10 @@
     width: 100%;
   }
   .grid0 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: -webkit-max-content;
+    grid-template-columns: max-content;
+    align-content: center;
   }
   .videos-goar {
     width: 100%;
@@ -551,7 +552,7 @@
   .grid0 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: auto;
   }
   .servicios {
     gap: 10px;
