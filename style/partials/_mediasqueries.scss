@@ -12,12 +12,18 @@
         display: flex;
         flex-direction: column;
         align-content: center;
+
+        .texto2,
+        .texto4 {
+            width: 100%;
+        }
     }
 
     .servicios {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        gap: 10px;
     }
 
     .videos-goar {
@@ -29,7 +35,6 @@
         flex-direction: column;
         border: none;
     }
-
 }
 
 @mixin medias-queries ($ancho, $flex, $column) {
@@ -52,8 +57,7 @@
 }
 
 
-
-@media (min-width:480px) and (max-width:768px) {
+@media (min-width:480px) and (max-width:728px) {
     .body {
         width: 100%;
     }
@@ -66,8 +70,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        left: 15%;
-        width: 60%;
+
 
     }
 
@@ -112,4 +115,46 @@
 .contactosprincipal {
     @include medias-queries (100%, flex, column);
     align-items: center;
+}
+
+@media(min-width:768px)and(max-width:1024px) {
+    .body {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .grid0 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 15%;
+        width: 60%;
+        .texto2,
+        .texto4 {
+            position: relative;
+            left: 12%;
+        }
+
+    }
+    .servicios {
+        gap: 10px;
+    }
+    .videos-goar {
+        width: 100%;
+    }
+    .contactosprincipal {
+        .cardcontacto {
+            width: 100%;
+        }
+    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+
+    }
 }

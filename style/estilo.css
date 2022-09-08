@@ -517,10 +517,15 @@
     flex-direction: column;
     align-content: center;
   }
+  .grid0 .texto2,
+.grid0 .texto4 {
+    width: 100%;
+  }
   .servicios {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
   }
   .videos-goar {
     width: 100%;
@@ -546,7 +551,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 728px) {
   .body {
     width: 100%;
   }
@@ -557,8 +562,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 15%;
-    width: 60%;
   }
   .servicios {
     gap: 10px;
@@ -590,4 +593,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .body {
+    width: 100%;
+  }
+  .logo {
+    width: 100%;
+  }
+  .grid0 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 15%;
+    width: 60%;
+  }
+  .grid0 .texto2,
+.grid0 .texto4 {
+    position: relative;
+    left: 12%;
+  }
+  .servicios {
+    gap: 10px;
+  }
+  .videos-goar {
+    width: 100%;
+  }
+  .contactosprincipal .cardcontacto {
+    width: 100%;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+  }
 }/*# sourceMappingURL=estilo.css.map */
