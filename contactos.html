@@ -36,7 +36,8 @@
         </ul>
         <!--redes sociales-->
         <div class="redes">
-            <a href="https://www.instagram.com/centrodeencomiendasfirmat/"> Instagram <i class="fab fa-instagram fa-1x"></i></a>
+            <a href="https://www.instagram.com/centrodeencomiendasfirmat/"> Instagram <i
+                    class="fab fa-instagram fa-1x"></i></a>
             <a href="https://www.facebook.com/Centro-de-encomiendas-Firmat-101690912522646">Facebook <i
                     class="fab fa-facebook fa-1x"></i></a>
         </div>
@@ -50,7 +51,7 @@
                             <p class="h4" style="color:red;"><strong>Contactanos para mas informacion</strong></p>
                         </li>
                         <li class="list-group-item">
-                        <i class="far fa-envelope fa-2x"></i>Centrodeencomiendasfirmat@hotmail.com
+                            <i class="far fa-envelope fa-2x"></i>Centrodeencomiendasfirmat@hotmail.com
                         </li>
                         <li class="list-group-item">
                             <i class="fab fa-whatsapp fa-2x"></i>3465-404708 3465-415231
@@ -69,21 +70,26 @@
         <section class="formulario">
             <div class="datos1">
                 <h4 class="formulariotexto"><strong class="h4"> Formulario de contacto</strong></h4>
-                <form action="Datos">
+                <form action="https://formspree.io/f/maykqven" method="POST">
                     <label for="Nombre_apellido"> Nombre y apellido</label>
-                    <input type="text" class="input" name="Nombre_Apellido">
+                    <input type="text" class="input" name="name">
                     <label for="contacto"> Contacto</label>
                     <input type="text" class="input" name="Contacto">
+                    <label for="contacto">Correo electronico</label>
+                    <input type="text" class="input" placeholder="Dirección de correo electrónico" name="email">
+
                 </form>
 
                 <div class="mb-2">
                     <label for="validationCustom03" class="form-label">Consulta</label>
-                    <textarea class="form-control" id="validationCustom03" rows="2"></textarea>
+                    <textarea class="form-control" id="validationCustom03" rows="2" name="message"></textarea>
                 </div>
 
-                <form action="Formulario de contacto" class="boton">
+                <form action="https://formspree.io/f/maykqven" method="POST" class="boton">
                     <input class="fenviar" class="input" type="submit" value="Enviar">
-                    <input class="flimpiar" class="input" type="Reset" value="Limpiar">
+                    <input type="hidden" name="_cc" value=" Centrodeencomiendasfirmat@hotmail.com">
+                    <input class="flimpiar" class="input" type="Reset" value="Reset">
+                    <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
                 </form>
             </div>
         </section>

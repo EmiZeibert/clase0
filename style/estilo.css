@@ -441,7 +441,8 @@
   font-weight: 600;
   font-size: 15px;
   font-style: oblique;
-  border: 1px solid white;
+  border: 3px solid black;
+  border-radius: 5px;
 }
 .contactosprincipal .formulario .datos1 {
   width: 100%;
@@ -449,8 +450,8 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   width: 390px;
   height: 390px;
   display: flex;
@@ -459,10 +460,10 @@
   align-content: center;
 }
 .contactosprincipal .formulario .datos1 .fenviar {
-  background: red;
+  background: rgb(241, 66, 66);
 }
 .contactosprincipal .formulario .datos1 .flimpiar {
-  background: red;
+  background: rgb(241, 66, 66);
 }
 .contactosprincipal .formulario .datos1 .input {
   width: 80%;
@@ -470,7 +471,7 @@
   margin: 10px;
 }
 .contactosprincipal .formulario .datos1 .input:focus {
-  background-color: blue;
+  background-color: rgb(22, 209, 209);
 }
 .contactosprincipal .formulario .datos1 .formulariotexto {
   font-family: sans-serif;
