@@ -583,7 +583,7 @@
   align-self: center;
 }
 @media screen and (max-width: 480px) {
-  .contactosprincipal .contactosprincipal .cardcontacto {
+  .contactosprincipal .contactosprincipal {
     width: 100%;
   }
   .contactosprincipal .contactosprincipal .formulario {
@@ -601,7 +601,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .contactosprincipal .contactosprincipal .cardcontacto {
+  .contactosprincipal .contactosprincipal {
     width: 100%;
   }
   .contactosprincipal .contactosprincipal .formulario {
