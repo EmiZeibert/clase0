@@ -161,7 +161,31 @@
             animation-timing-function: ease-out;
   }
 }
+@media screen and (max-width: 480px) {
+  .fondo .menu .redes {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+.fondo .logo {
+  width: 100%;
+}
 
+@media screen and (max-width: 768px) {
+  .body .menu {
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+  }
+  .body .menu .redes {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }
+  .body .logo {
+    width: 100%;
+  }
+}
 .grid0 {
   padding: 10px;
   border: none;
@@ -265,7 +289,21 @@
     opacity: 1;
   }
 }
+@media screen and (max-width: 480px) {
+  .grid0 .grid0 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .grid0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .grid0 .texto2 {
   width: 450px;
   height: 450px;
@@ -323,6 +361,18 @@
   font-family: sans-serif;
   font-weight: 600;
   font-style: oblique;
+}
+@media screen and (max-width: 480px) {
+  .footer1 .whatsapp {
+    display: flex;
+    position: fixed;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer1 .whatsapp {
+    display: flex;
+    position: fixed;
+  }
 }
 
 .servicios {
@@ -385,8 +435,26 @@
 .servicios > div .card .card-textcard-text:hover {
   transform: scale(1.1);
 }
+@media screen and (max-width: 480px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .servicios .servicios .imagenservicio1 .card-text {
+    background: linear-gradient(black, rgb(65, 76, 105));
+  }
+  .servicios .servicios .imagenservicio2 .card-text {
+    background: linear-gradient(black, rgb(65, 76, 105));
+  }
+  .servicios .servicios .imagendeposito .card-text {
+    background: linear-gradient(black, rgb(65, 76, 105));
+  }
+}
 
-/*falta media queries*/
 .carousel-item {
   width: 100%;
 }
@@ -399,6 +467,18 @@
   text-align: center;
   position: relative;
   bottom: 25px;
+}
+@media screen and (max-width: 480px) {
+  .carousel-item .videos-goar {
+    width: 100%;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-item .videos-goar {
+    width: 100%;
+    height: 600px;
+  }
 }
 
 .direccion {
@@ -415,6 +495,20 @@
   text-align: center;
   padding-top: 30px;
   margin-top: 60px;
+}
+@media screen and (max-width: 480px) {
+  .direccion .ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .direccion .ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .contactosprincipal {
@@ -488,6 +582,42 @@
   align-content: center;
   align-self: center;
 }
+@media screen and (max-width: 480px) {
+  .contactosprincipal .contactosprincipal .cardcontacto {
+    width: 100%;
+  }
+  .contactosprincipal .contactosprincipal .formulario {
+    width: 100%;
+  }
+  .contactosprincipal .contactosprincipal {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactosprincipal .formulario {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contactosprincipal .contactosprincipal .cardcontacto {
+    width: 100%;
+  }
+  .contactosprincipal .contactosprincipal .formulario {
+    width: 100%;
+  }
+}
+.contactosprincipal .contactosprincipal {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+.contactosprincipal .formulario {
+  display: flex;
+  flex-direction: column;
+}
 
 .fa-facebook {
   color: blue;
@@ -503,130 +633,4 @@
 
 .fa-envelope {
   color: rgb(236, 233, 20);
-}
-
-@media (max-width: 480px) {
-  .body {
-    width: 100%;
-  }
-  .logo {
-    width: 100%;
-  }
-  .grid0 {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-  .grid0 .texto2,
-.grid0 .texto4 {
-    width: 100%;
-  }
-  .servicios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-  }
-  .videos-goar {
-    width: 100%;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    border: none;
-  }
-}
-.contactosprincipal {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.contactosprincipal {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: 480px) and (max-width: 728px) {
-  .body {
-    width: 100%;
-  }
-  .logo {
-    width: 100%;
-  }
-  .grid0 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  .servicios {
-    gap: 10px;
-  }
-  .videos-goar {
-    width: 100%;
-  }
-  .contactosprincipal .cardcontacto {
-    width: 100%;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-  }
-}
-.ubicacion {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.contactosprincipal {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .body {
-    width: 100%;
-  }
-  .logo {
-    width: 100%;
-  }
-  .grid0 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 15%;
-    width: 60%;
-  }
-  .grid0 .texto2,
-.grid0 .texto4 {
-    position: relative;
-    left: 12%;
-  }
-  .servicios {
-    gap: 10px;
-  }
-  .videos-goar {
-    width: 100%;
-  }
-  .contactosprincipal .cardcontacto {
-    width: 100%;
-  }
-  .formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-  }
 }/*# sourceMappingURL=estilo.css.map */

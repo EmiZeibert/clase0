@@ -30,5 +30,21 @@
         font-family:$fontSans;
         font-weight: $font-weight;
         font-style: oblique;
-    }      
+    }    
+    @media screen and (max-width:480px) {
+        .whatsapp {
+            display: flex;
+            position: fixed;
+        }
+
+       
+    }
+    @media screen and (max-width:768px) {
+        .whatsapp {
+            display: flex;
+            position: fixed;
+    }
+}
+   
+  
 }

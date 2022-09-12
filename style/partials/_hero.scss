@@ -63,7 +63,7 @@
                 opacity: 1;
             }
         }
-        
+
     }
 
     .imagen3 {
@@ -113,34 +113,61 @@
         }
     }
 
-}
+    @media screen and (max-width:480px) {
+        .grid0 {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+                           
+            }
 
-@mixin tamanos ($ancho, $alto, $center, $opacity) {
-    width: $ancho;
-    height: $alto;
-    text-align: $center;
-    opacity: $opacity;
-}
+        }
+    }
 
-.grid0 .texto2 {
-    width: 450px;
-    height: 450px;
-    text-align: center;
-    opacity: 90%;
-    @include tamanos (450px, 450px, center, 90%);
-}
-.grid0 .texto4 {
-    @include tamanos (450px, 450px, center, 90%);
-}
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    opacity: 90%;
-}
-.imagen1 {
-    @include flex-center();
-}
-.imagen3 {
-    @include flex-center();
-}
+    @media screen and (max-width:768px) {
+        .grid0 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+    }
+
+
+
+
+
+
+    @mixin tamanos ($ancho, $alto, $center, $opacity) {
+        width: $ancho;
+        height: $alto;
+        text-align: $center;
+        opacity: $opacity;
+    }
+
+    .grid0 .texto2 {
+        width: 450px;
+        height: 450px;
+        text-align: center;
+        opacity: 90%;
+        @include tamanos (450px, 450px, center, 90%);
+    }
+
+    .grid0 .texto4 {
+        @include tamanos (450px, 450px, center, 90%);
+    }
+
+    @mixin flex-center {
+        display: flex;
+        justify-content: center;
+        opacity: 90%;
+    }
+
+    .imagen1 {
+        @include flex-center();
+    }
+
+    .imagen3 {
+        @include flex-center();
+    }
