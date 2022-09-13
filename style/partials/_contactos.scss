@@ -9,8 +9,8 @@
     .cardcontacto {
         display: flex;
         justify-content: center;
-        font-family: sans-serif;
-        font-weight: $font-weight;
+        font-family:$fontSans;
+        font-weight:$font-weight;
         font-size: 18px;
         font-style: oblique;
         margin: 10px;
