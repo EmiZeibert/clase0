@@ -11,13 +11,14 @@
         padding-top: 90px;
         gap: 5px;
 
+
         .gridmenu {
             display: grid;
             justify-content: center;
             grid-template-columns: 80px 100px 105px 105px;
             text-align: center;
             list-style-type: none;
-
+               
             li {
                 &:hover {
                     transform: scale(1.1);
@@ -113,7 +114,7 @@
 
         }
 
-
+        
     }
 
     @media screen and (max-width:480px) {

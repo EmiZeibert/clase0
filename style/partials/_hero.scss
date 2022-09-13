@@ -44,25 +44,9 @@
         >h5 {
             animation-name: entradatexto;
             animation-duration: 2s;
+            
         }
-
-        @keyframes entradatexto {
-            0% {
-                -webkit-transform: rotateY(-100deg);
-                transform: rotateY(-100deg);
-                -webkit-transform-origin: right;
-                transform-origin: right;
-                opacity: 0;
-            }
-
-            100% {
-                -webkit-transform: rotateY(0);
-                transform: rotateY(0);
-                -webkit-transform-origin: right;
-                transform-origin: right;
-                opacity: 1;
-            }
-        }
+              
 
     }
 
@@ -92,8 +76,10 @@
         >h5 {
             animation-name: entradatexto;
             animation-duration: 2s;
+            
         }
-
+      
+        
         @keyframes entradatexto {
             0% {
                 -webkit-transform: rotateY(-100deg);
@@ -102,7 +88,7 @@
                 transform-origin: right;
                 opacity: 0;
             }
-
+    
             100% {
                 -webkit-transform: rotateY(0);
                 transform: rotateY(0);
@@ -111,6 +97,7 @@
                 opacity: 1;
             }
         }
+       
     }
 
     @media screen and (max-width:480px) {
@@ -134,12 +121,7 @@
         }
     }
 
-
-
-
-
-
-    @mixin tamanos ($ancho, $alto, $center, $opacity) {
+       @mixin tamanos ($ancho, $alto, $center, $opacity) {
         width: $ancho;
         height: $alto;
         text-align: $center;
@@ -171,3 +153,5 @@
     .imagen3 {
         @include flex-center();
     }
+
+   

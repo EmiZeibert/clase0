@@ -43,33 +43,27 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-
-            .fenviar {
-                background: rgb(241, 66, 66);
-
-            }
-
-            .flimpiar {
-                background: rgb(241, 66, 66);
-            }
-
+    
             .input {
                 width: 80%;
                 height: 30px;
                 margin: 10px;
 
+                @each $colorback in white,rgb(241, 66, 66),rgb(241, 66, 66),rgb(22, 209, 209) {
+                #{$colorback}{$color:#{$color
 
-                &:focus {
-                    background-color: rgb(22, 209, 209);
+                };
+
                 }
-
+                
+               }
             }
 
             .formulariotexto {
                 font-family: $fontSans;
                 font-weight: $font-weight;
                 font-size: 15px;
-                color: red;
+
                 font-style: oblique;
 
                 .boton {
@@ -80,7 +74,7 @@
                     align-content: center;
                     align-self: center;
 
-
+                    
                 }
             }
 
@@ -92,9 +86,11 @@
     @media screen and (max-width:480px) {
         .contactosprincipal {
             width: 100%;
+            justify-content: center;
             
             .formulario {
                 width: 100%;
+                justify-content: center;
             }
         }
 
@@ -115,9 +111,11 @@
         
         .contactosprincipal {
             width: 100%;
+            justify-content: center;
             
             .formulario {
                 width: 100%;
+                justify-content: center;
             }
         }
     }

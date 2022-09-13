@@ -228,30 +228,6 @@
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
 }
-@-webkit-keyframes entradatexto {
-  0% {
-    transform: rotateY(-100deg);
-    transform-origin: right;
-    opacity: 0;
-  }
-  100% {
-    transform: rotateY(0);
-    transform-origin: right;
-    opacity: 1;
-  }
-}
-@keyframes entradatexto {
-  0% {
-    transform: rotateY(-100deg);
-    transform-origin: right;
-    opacity: 0;
-  }
-  100% {
-    transform: rotateY(0);
-    transform-origin: right;
-    opacity: 1;
-  }
-}
 .grid0 .imagen3 {
   grid-area: imagen3;
 }
@@ -276,6 +252,18 @@
           animation-name: entradatexto;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
+}
+@-webkit-keyframes entradatexto {
+  0% {
+    transform: rotateY(-100deg);
+    transform-origin: right;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateY(0);
+    transform-origin: right;
+    opacity: 1;
+  }
 }
 @keyframes entradatexto {
   0% {
@@ -423,6 +411,10 @@
   background: linear-gradient(rgb(230, 22, 22) 70%, rgb(9, 157, 216));
   border-radius: 5px;
 }
+.servicios > div .card .card3 {
+  background: linear-gradient(rgb(9, 157, 216) 70%, rgb(230, 22, 22));
+  border-radius: 5px;
+}
 .servicios > div .card .card-text {
   background: linear-gradient(black, gray);
   border-radius: 3px;
@@ -487,7 +479,6 @@
   color: white;
   background-color: black;
   height: 100px;
-  color: white;
   font-family: sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -571,7 +562,6 @@
   font-family: sans-serif;
   font-weight: 600;
   font-size: 15px;
-  color: red;
   font-style: oblique;
 }
 .contactosprincipal .formulario .datos1 .formulariotexto .boton {
@@ -585,9 +575,11 @@
 @media screen and (max-width: 480px) {
   .contactosprincipal .contactosprincipal {
     width: 100%;
+    justify-content: center;
   }
   .contactosprincipal .contactosprincipal .formulario {
     width: 100%;
+    justify-content: center;
   }
   .contactosprincipal .contactosprincipal {
     display: flex;
@@ -603,9 +595,11 @@
 @media screen and (max-width: 768px) {
   .contactosprincipal .contactosprincipal {
     width: 100%;
+    justify-content: center;
   }
   .contactosprincipal .contactosprincipal .formulario {
     width: 100%;
+    justify-content: center;
   }
 }
 .contactosprincipal .contactosprincipal {
