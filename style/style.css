@@ -43,7 +43,7 @@
 .gridmenu {
     display: grid;
     justify-content: center;
-    grid-template-columns: 80px 100px 105px 105px;
+    grid-template-columns: 80px 100px 105px 105px 150px;
     text-align: center;
 
 }
@@ -805,4 +805,29 @@ ul {
         width: 100%;
     }
 
+}
+/*pagina de quienes somos*/
+.tarjetanosotros{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+   
+}
+
+.editartarjeta{
+  
+
+}
+
+.card-text{
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    background: linear-gradient(159deg, rgb(15, 15, 15) 20%, rgba(15, 161, 255, 0.958420868347339) 65%, rgb(15, 15, 15) 15%);
+    width: 500px;
 }

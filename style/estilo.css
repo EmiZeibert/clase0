@@ -30,7 +30,7 @@
 .fondo .menu .gridmenu {
   display: grid;
   justify-content: center;
-  grid-template-columns: 80px 100px 105px 105px;
+  grid-template-columns: 80px 100px 105px 105px 150px;
   text-align: center;
   list-style-type: none;
 }
@@ -395,9 +395,6 @@
 .servicios .imagenservicio1 {
   grid-area: imagen1;
 }
-.servicios .flechas {
-  grid-area: imagen0;
-}
 .servicios .imgenservicio2 {
   grid-area: imagen2;
 }
@@ -641,4 +638,22 @@
 
 .fa-envelope {
   color: rgb(236, 233, 20);
+}
+
+.tarjetanosotros {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+}
+.tarjetanosotros .card-text {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: linear-gradient(159deg, rgb(212, 210, 210) 20%, rgba(15, 161, 255, 0.9584208683) 70%, rgb(223, 221, 221) 10%);
+  width: 500px;
 }/*# sourceMappingURL=estilo.css.map */
