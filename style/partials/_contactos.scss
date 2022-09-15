@@ -5,12 +5,11 @@
     gap: 10px;
     padding: 10px;
 
-
     .cardcontacto {
         display: flex;
         justify-content: center;
-        font-family:$fontSans;
-        font-weight:$font-weight;
+        font-family: $fontSans;
+        font-weight: $font-weight;
         font-size: 18px;
         font-style: oblique;
         margin: 10px;
@@ -25,6 +24,7 @@
         font-family: $fontSans;
         font-weight: $font-weight;
         font-size: 15px;
+        background-color: white;
         font-style: oblique;
         border: 3px solid $secondarycolor;
         border-radius: 5px;
@@ -43,101 +43,106 @@
             flex-direction: column;
             justify-content: center;
             align-content: center;
-    
+
+            .fenviar {
+                background-color: rgb(241, 66, 66);
+            }
+
+            .flimpiar {
+                background-color: rgb(241, 66, 66);
+            }
+
             .input {
                 width: 80%;
                 height: 30px;
                 margin: 10px;
 
-                @each $colorback in white,rgb(241, 66, 66),rgb(241, 66, 66),rgb(22, 209, 209) {
-                #{$colorback}{$color:#{$color
-
-                };
-
-                }
+                &:focus{background-color: aqua;}
                 
-               }
             }
-
-            .formulariotexto {
-                font-family: $fontSans;
-                font-weight: $font-weight;
-                font-size: 15px;
-
-                font-style: oblique;
-
-                .boton {
-                    height: 30px;
-                    width: 240px;
-                    display: flex;
-                    flex-direction: row;
-                    align-content: center;
-                    align-self: center;
-
-
-                }
-            }
-
-
         }
-
     }
 
-    @media screen and (max-width:480px) {
-        .contactosprincipal {
-            width: 100%;
-            justify-content: center;
-            
-            .formulario {
-                width: 100%;
-                justify-content: center;
-            }
-        }
 
-        @mixin medias-queries ($flex, $column) {
-            display: $flex;
-            flex-direction: $column;
-        }
-        .contactosprincipal {
+    .formulariotexto {
+        font-family: $fontSans;
+        font-weight: $font-weight;
+        font-size: 10px + 5px;
+
+        font-style: oblique;
+
+
+        .boton {
+            height: 30px;
+            width: 240px;
             display: flex;
-            flex-direction: column;
-            @include medias-queries (flex, column);
-        }
-        .formulario {
-            @include medias-queries (flex, column);
+            flex-direction: row;
+            align-content: center;
+            align-self: center;
+
+
         }
     }
-    @media screen and (max-width:768px) {
-        
-        .contactosprincipal {
+}
+
+@media screen and (max-width:480px) {
+    .contactosprincipal {
+        width: 100%;
+        justify-content: center;
+
+        .formulario {
             width: 100%;
             justify-content: center;
-            
-            .formulario {
-                width: 100%;
-                justify-content: center;
-            }
         }
     }
 
     @mixin medias-queries ($flex, $column) {
         display: $flex;
         flex-direction: $column;
-
     }
 
     .contactosprincipal {
         display: flex;
         flex-direction: column;
         @include medias-queries (flex, column);
-
     }
 
     .formulario {
         @include medias-queries (flex, column);
     }
+}
+
+@media screen and (max-width:768px) {
+
+    .contactosprincipal {
+        width: 100%;
+        justify-content: center;
+
+        .formulario {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+@mixin medias-queries ($flex, $column) {
+    display: $flex;
+    flex-direction: $column;
 
 }
+
+.contactosprincipal {
+    display: flex;
+    flex-direction: column;
+    @include medias-queries (flex, column);
+
+}
+
+.formulario {
+    @include medias-queries (flex, column);
+}
+
+
 
 
 $redes: (

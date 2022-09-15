@@ -56,7 +56,6 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-right: 20px;
 }
 .fondo .redes a {
   text-decoration: none;
@@ -369,7 +368,6 @@
   align-items: center;
   display: grid;
   justify-items: center;
-  display: grid;
   grid-template-columns: 2fr 2fr 2fr 1fr;
   grid-template-rows: 2fr 2fr;
   grid-template-areas: "imagen1 imagen1 imagen2 imagen2" "imagen3 imagen3 imagen3 imagen3";
@@ -396,6 +394,9 @@
 }
 .servicios .imagenservicio1 {
   grid-area: imagen1;
+}
+.servicios .flechas {
+  grid-area: imagen0;
 }
 .servicios .imgenservicio2 {
   grid-area: imagen2;
@@ -451,12 +452,7 @@
   width: 100%;
 }
 .carousel-item .card-title .botonmaps {
-  color: white;
-  font-family: sans-serif;
-  font-weight: 600;
   font-size: 15px;
-  font-style: oblique;
-  text-align: center;
   position: relative;
   bottom: 25px;
 }
@@ -476,16 +472,11 @@
 .direccion {
   outline: none;
   text-decoration: none;
-  color: white;
   background-color: black;
-  height: 100px;
-  font-family: sans-serif;
-  font-weight: 600;
   font-size: 20px;
-  font-style: oblique;
-  text-align: center;
   padding-top: 30px;
   margin-top: 60px;
+  height: 100px;
 }
 @media screen and (max-width: 480px) {
   .direccion .ubicacion {
@@ -500,6 +491,27 @@
     flex-direction: column;
     align-items: center;
   }
+}
+
+.botonmaps {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  text-align: center;
+  color: white;
+}
+
+.direccion {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: oblique;
+  text-align: center;
+  color: white;
 }
 
 .contactosprincipal {
@@ -525,6 +537,7 @@
   font-family: sans-serif;
   font-weight: 600;
   font-size: 15px;
+  background-color: white;
   font-style: oblique;
   border: 3px solid black;
   border-radius: 5px;
@@ -535,7 +548,6 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: white;
   color: black;
   width: 390px;
   height: 390px;
@@ -545,10 +557,10 @@
   align-content: center;
 }
 .contactosprincipal .formulario .datos1 .fenviar {
-  background: rgb(241, 66, 66);
+  background-color: rgb(241, 66, 66);
 }
 .contactosprincipal .formulario .datos1 .flimpiar {
-  background: rgb(241, 66, 66);
+  background-color: rgb(241, 66, 66);
 }
 .contactosprincipal .formulario .datos1 .input {
   width: 80%;
@@ -556,15 +568,15 @@
   margin: 10px;
 }
 .contactosprincipal .formulario .datos1 .input:focus {
-  background-color: rgb(22, 209, 209);
+  background-color: aqua;
 }
-.contactosprincipal .formulario .datos1 .formulariotexto {
+.contactosprincipal .formulariotexto {
   font-family: sans-serif;
   font-weight: 600;
   font-size: 15px;
   font-style: oblique;
 }
-.contactosprincipal .formulario .datos1 .formulariotexto .boton {
+.contactosprincipal .formulariotexto .boton {
   height: 30px;
   width: 240px;
   display: flex;
@@ -572,43 +584,45 @@
   align-content: center;
   align-self: center;
 }
+
 @media screen and (max-width: 480px) {
-  .contactosprincipal .contactosprincipal {
+  .contactosprincipal {
     width: 100%;
     justify-content: center;
-  }
-  .contactosprincipal .contactosprincipal .formulario {
-    width: 100%;
-    justify-content: center;
-  }
-  .contactosprincipal .contactosprincipal {
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    flex-direction: column;
   }
   .contactosprincipal .formulario {
+    width: 100%;
+    justify-content: center;
+  }
+  .contactosprincipal {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario {
     display: flex;
     flex-direction: column;
   }
 }
 @media screen and (max-width: 768px) {
-  .contactosprincipal .contactosprincipal {
+  .contactosprincipal {
     width: 100%;
     justify-content: center;
   }
-  .contactosprincipal .contactosprincipal .formulario {
+  .contactosprincipal .formulario {
     width: 100%;
     justify-content: center;
   }
 }
-.contactosprincipal .contactosprincipal {
+.contactosprincipal {
   display: flex;
   flex-direction: column;
   display: flex;
   flex-direction: column;
 }
-.contactosprincipal .formulario {
+
+.formulario {
   display: flex;
   flex-direction: column;
 }
