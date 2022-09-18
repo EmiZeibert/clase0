@@ -1,0 +1,74 @@
+.tarjetanosotros {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+
+    .card-body {
+        border: solid $secondarycolor;
+        border-radius: 5px;
+
+
+        .card-text {
+            font-family: $fontSans;
+            font-weight: 600;
+            font-size: 20px;
+            color: $secondarycolor;
+            background: linear-gradient(159deg, rgb(212, 210, 210) 20%, rgba(15, 161, 255, 0.958420868347339) 70%, rgb(223, 221, 221) 10%);
+            width: 500px;
+
+        }
+    }
+
+    .nosotroslocal {
+
+        img {
+            width: 435px;
+            height: 390px;
+            border: solid $secondarycolor;
+            border-radius: 5px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width:480px) {
+    .tarjetanosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+
+        .card-body {
+            .card-text {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .tarjetanosotros {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+
+        .card-body {
+            .card-text {
+                width: 100%;
+            }
+        }
+        .nosotroslocal {
+
+            img {
+              width: 100%;
+            }
+    
+        }
+    }
+}

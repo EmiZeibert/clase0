@@ -14,7 +14,7 @@
     animation-name: entrada;
     animation-duration: 2s;
 
-    
+
     @keyframes entrada {
         0% {
             -webkit-transform: scaleY(0);
@@ -31,14 +31,14 @@
         grid-area: imagen1;
 
     }
-    
+
     .imgenservicio2 {
         grid-area: imagen2;
     }
 
     .imagendeposito {
         grid-area: imagen3;
-            
+
     }
 
     >div {
@@ -82,10 +82,14 @@
 
 
     @media screen and (max-width:480px) {
+
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 10px;
+
+
+
 
     }
 

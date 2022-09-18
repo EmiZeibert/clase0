@@ -57,8 +57,10 @@
                 height: 30px;
                 margin: 10px;
 
-                &:focus{background-color: aqua;}
-                
+                &:focus {
+                    background-color: aqua;
+                }
+
             }
         }
     }
@@ -89,11 +91,6 @@
     .contactosprincipal {
         width: 100%;
         justify-content: center;
-
-        .formulario {
-            width: 100%;
-            justify-content: center;
-        }
     }
 
     @mixin medias-queries ($flex, $column) {
@@ -119,7 +116,6 @@
         justify-content: center;
 
         .formulario {
-            width: 100%;
             justify-content: center;
         }
     }
