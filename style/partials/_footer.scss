@@ -9,33 +9,27 @@
         height: 55px;
         line-height: 55px;
         bottom: 55px;
-
+        max-width: 100%;
         >a {
             color: green;
-            font-family:$fontSans;
-            font-weight: $font-weight;
-            font-size: 18px;
-            font-style: oblique;
             text-decoration: none;
+            font-size: 18px;
 
             }
     }
     .copy {
-
+        font-size: 12px;
         text-align: center;
         padding-top: 50px;
-        font-size: 15px;
         background-color:$secondarycolor;
         color: white;
-        font-family:$fontSans;
-        font-weight: $font-weight;
-        font-style: oblique;
-
+        
     }    
     @media screen and (max-width:480px) {
         .whatsapp {
             display: flex;
             position: fixed;
+            
            
         }
 
@@ -49,4 +43,15 @@
     }
 }
      
+}
+@mixin textos {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-style: oblique;
+}
+.footer1 .whatsapp a{
+    @include textos;
+}
+.footer1 .copy{
+    @include textos;
 }

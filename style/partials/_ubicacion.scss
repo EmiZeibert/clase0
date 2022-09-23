@@ -1,36 +1,34 @@
 .carousel-item {
-    width: 100%;
-
-    .card-title {
-        .botonmaps {
-
-            font-size: 15px;
-
-            position: relative;
-            bottom: 25px;
-
+       max-width: 100%;
+      
+    .card-body {
+        max-height: 50%;
+        .card-title {
+            .botonmaps {
+                font-size: 18px;
+                position: relative;
+                bottom: 25px;
+                text-align: center;
+                color: white;
+            }
         }
-
     }
 
     @media screen and (max-width:480px) {
-                
-                .videos-goar {
-                    width: 100%;
-                    height: 600px;
-           
+        .carousel-item {
+            .videos-goar img {
+                width: 100%;
+                max-width: 100%;
+
+            }
         }
-        
-
-        
-
     }
 
     @media screen and (max-width:768px) {
-        
-                .videos-goar {
-                    width: 100%;
-                    height: 600px;       
+
+        .videos-goar {
+            width: 100%;
+            max-width: 100%;
         }
     }
 
@@ -39,29 +37,31 @@
 .direccion {
     outline: none;
     text-decoration: none;
-    background-color: $secondarycolor;
-    font-size: 20px;
-    padding-top: 30px;
-    margin-top: 60px;
-    height: 100px;
+    background-color: $secondarycolor;     
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
 
     @media screen and (max-width:480px) {
 
-        .ubicacion {
+        .direccion {
             display: flex;
             flex-direction: column;
             align-items: center;
-
-        }
+            max-width: 100%;
+            
+                }
 
     }
 
     @media screen and (max-width:768px) {
 
-        .ubicacion {
+        .direccion {
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 100%;
 
         }
 
@@ -70,23 +70,16 @@
 
 }
 
-@mixin fuentes ($fontSans, $font-weight, $oblique, $center, $white) {
-    font-family: $fontSans;
-    font-weight: $font-weight;
-    font-style: $oblique;
-    text-align: $center;
-    color: $white;
+@mixin textos {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-style: oblique;
 }
 
-.botonmaps {
-    font-family: $fontSans;
-    font-weight: $font-weight;
-    font-style: oblique;
-    text-align: center;
-    color: white;
-    @include fuentes($fontSans, $font-weight, oblique, center, white);
+.carousel-item .card-body .card-title .botonmaps {
+    @include textos;
 }
 
 .direccion {
-    @include fuentes($fontSans, $font-weight, oblique, center, white);
+    @include textos;
 }

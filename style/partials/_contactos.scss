@@ -4,28 +4,23 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
+    max-width: 100%;
+    
+
 
     .cardcontacto {
         display: flex;
         justify-content: center;
-        font-family: $fontSans;
-        font-weight: $font-weight;
-        font-size: 18px;
-        font-style: oblique;
-        margin: 10px;
-
-
+        width: 100%;
+        max-width: 100%;
+        min-width: 10%;
         ul {
             list-style-type: none;
         }
     }
 
     .formulario {
-        font-family: $fontSans;
-        font-weight: $font-weight;
-        font-size: 15px;
         background-color: white;
-        font-style: oblique;
         border: 3px solid $secondarycolor;
         border-radius: 5px;
 
@@ -35,11 +30,9 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
-
             color: $secondarycolor;
             width: 390px;
-            height: 390px;
-            display: flex;
+           display: flex;
             flex-direction: column;
             justify-content: center;
             align-content: center;
@@ -67,14 +60,8 @@
 
 
     .formulariotexto {
-        font-family: $fontSans;
-        font-weight: $font-weight;
-        font-size: 10px + 5px;
-
-        font-style: oblique;
-
-
         .boton {
+            max-width: 100%;
             height: 30px;
             width: 240px;
             display: flex;
@@ -86,59 +73,6 @@
         }
     }
 }
-
-@media screen and (max-width:480px) {
-    .contactosprincipal {
-        width: 100%;
-        justify-content: center;
-    }
-
-    @mixin medias-queries ($flex, $column) {
-        display: $flex;
-        flex-direction: $column;
-    }
-
-    .contactosprincipal {
-        display: flex;
-        flex-direction: column;
-        @include medias-queries (flex, column);
-    }
-
-    .formulario {
-        @include medias-queries (flex, column);
-    }
-}
-
-@media screen and (max-width:768px) {
-
-    .contactosprincipal {
-        width: 100%;
-        justify-content: center;
-
-        .formulario {
-            justify-content: center;
-        }
-    }
-}
-
-@mixin medias-queries ($flex, $column) {
-    display: $flex;
-    flex-direction: $column;
-
-}
-
-.contactosprincipal {
-    display: flex;
-    flex-direction: column;
-    @include medias-queries (flex, column);
-
-}
-
-.formulario {
-    @include medias-queries (flex, column);
-}
-
-
 
 
 $redes: (
@@ -166,4 +100,23 @@ $redes: (
 .fa-envelope {
     color: rgb(236, 233, 20);
 
+}
+
+@mixin textos {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: oblique;
+}
+
+.contactosprincipal .cardcontacto {
+    @include textos;
+}
+
+.contactosprincipal .formulario {
+    @include textos;
+}
+
+.contactosprincipal .formulariotexto {
+    @include textos;
 }

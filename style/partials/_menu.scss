@@ -6,18 +6,87 @@
 
     .menu {
         background-color: $secondarycolor;
-        width: 100%;
-        height: 60%;
-        padding-top: 90px;
-        gap: 4px;
+        gap: 3px;
+      
+        
 
+        .logo {
+            background-color: $secondarycolor;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+
+            animation-name: rebote;
+            animation-duration: 4s;
+
+            img {
+                width: 250px;
+                max-width: 100%;
+                
+            }
+
+            @keyframes rebote {
+                0% {
+                    transform: translateY(-500px);
+                    animation-timing-function: ease-in;
+                    opacity: 0
+                }
+
+                38% {
+                    transform: translateY(0);
+                    animation-timing-function: ease-out;
+                    opacity: 1
+                }
+
+                55% {
+                    transform: translateY(-65px);
+                    animation-timing-function: ease-in
+                }
+
+                72% {
+                    transform: translateY(0);
+                    animation-timing-function: ease-out
+                }
+
+                81% {
+                    transform: translateY(-28px);
+                    animation-timing-function: ease-in
+                }
+
+                90% {
+                    transform: translateY(0);
+                    animation-timing-function: ease-out
+                }
+
+                95% {
+                    transform: translateY(-8px);
+                    animation-timing-function: ease-in
+                }
+
+                100% {
+                    transform: translateY(0);
+                    animation-timing-function: ease-out
+                }
+
+            }
+
+
+        }
 
         .gridmenu {
-            display: grid;
+            display: flex;
+            flex-direction: row;
             justify-content: center;
-            grid-template-columns: 80px 100px 105px 105px 100px;
             text-align: center;
             list-style-type: none;
+            padding: 20px;
+            flex-wrap: wrap;
+            gap: 7px;
+
+           
+            
 
             li {
                 &:hover {
@@ -29,136 +98,52 @@
                     color: white;
                     font-family: $fontSans;
                     font-weight: 900;
-                    margin-left: 5px;
-                    padding: 3px;
-                    padding-bottom: 3px;
                     background: $maincolor;
                     border: none;
                     border-radius: 10px;
                     text-decoration: none;
+                    margin-left: 5px;
+                    padding: 3px;
+                    padding-bottom: 3px;
 
                 }
-
-            }
-        }
-
-    }
-
-    .redes {
-        font-family: $fontSans;
-        font-weight: 800;
-        font-size: 17px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-
-
-        a {
-            text-decoration: none;
-            color: white;
-
-        }
-    }
-
-    .logo {
-        background-color: $secondarycolor;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-
-        animation-name: rebote;
-        animation-duration: 4s;
-
-        @keyframes rebote {
-            0% {
-                transform: translateY(-500px);
-                animation-timing-function: ease-in;
-                opacity: 0
             }
 
-            38% {
-                transform: translateY(0);
-                animation-timing-function: ease-out;
-                opacity: 1
-            }
-
-            55% {
-                transform: translateY(-65px);
-                animation-timing-function: ease-in
-            }
-
-            72% {
-                transform: translateY(0);
-                animation-timing-function: ease-out
-            }
-
-            81% {
-                transform: translateY(-28px);
-                animation-timing-function: ease-in
-            }
-
-            90% {
-                transform: translateY(0);
-                animation-timing-function: ease-out
-            }
-
-            95% {
-                transform: translateY(-8px);
-                animation-timing-function: ease-in
-            }
-
-            100% {
-                transform: translateY(0);
-                animation-timing-function: ease-out
-            }
 
         }
 
+        .redes {
+            font-family: $fontSans;
+            font-weight: 800;
+            font-size: 17px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 7px;
 
-    }
-
-    @media screen and (max-width:480px) {
-        .body {
-        .menu {
-            .gridmenu {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin-right:7% ;
-
-            }
-
-            .redes {
-                display: flex;
-                justify-content: flex-end;
+            a {
+                text-decoration: none;
+                color: white;
             }
         }
-
     }
 }
-
+@media screen and (max-width:480px) {
     .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+        max-width: 100%;
     }
 }
-
 @media screen and (max-width:768px) {
-    .body {
-        .menu {
-            grid-template-columns: repeat(5, 1fr);
-            align-content: center;
-
-            .redes {
-                display: flex;
-                justify-content: flex-end;
-                padding-top: 10px;
-            }
-        }
-
-        .logo {
-            width: 100%;
-
-        }
+    .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
     }
 }
