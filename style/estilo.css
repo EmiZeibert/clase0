@@ -19,6 +19,7 @@
   opacity: 90%;
   background-size: cover;
   background-repeat: no-repeat;
+  max-width: 100%;
 }
 .fondo .menu {
   background-color: black;
@@ -287,10 +288,14 @@
   background-color: black;
   color: white;
 }
+
 @media screen and (max-width: 480px) {
   .footer1 .whatsapp {
     display: flex;
     position: fixed;
+  }
+  .copy {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -298,8 +303,10 @@
     display: flex;
     position: fixed;
   }
+  .copy {
+    max-width: 100%;
+  }
 }
-
 .footer1 .whatsapp a {
   font-family: sans-serif;
   font-weight: 600;
@@ -369,10 +376,8 @@
 }
 
 .carousel-item {
+  width: 100%;
   max-width: 100%;
-}
-.carousel-item .card-body {
-  max-height: 50%;
 }
 .carousel-item .card-body .card-title .botonmaps {
   font-size: 18px;
@@ -387,20 +392,17 @@
     max-width: 100%;
   }
 }
+
 @media screen and (max-width: 768px) {
   .carousel-item .videos-goar {
     width: 100%;
     max-width: 100%;
   }
 }
-
 .direccion {
-  outline: none;
-  text-decoration: none;
-  background-color: black;
   text-align: center;
   color: white;
-  margin-top: 15px;
+  margin-top: 100px;
   font-size: 18px;
 }
 @media screen and (max-width: 480px) {
@@ -462,7 +464,7 @@
   justify-content: center;
   text-align: center;
   color: black;
-  width: 390px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -483,13 +485,11 @@
   background-color: aqua;
 }
 .contactosprincipal .formulariotexto .boton {
-  max-width: 100%;
-  height: 30px;
-  width: 240px;
   display: flex;
   flex-direction: row;
   align-content: center;
   align-self: center;
+  max-width: 100%;
 }
 
 .fa-facebook {
@@ -542,13 +542,16 @@
   border-radius: 5px;
 }
 .tarjetanosotros .card-body .card-text {
-  max-width: 100%;
   font-family: sans-serif;
   font-weight: 600;
   font-size: 20px;
   color: black;
   background: linear-gradient(159deg, rgb(212, 210, 210) 20%, rgba(15, 161, 255, 0.9584208683) 70%, rgb(223, 221, 221) 10%);
   width: 500px;
+  max-width: 100%;
+}
+.tarjetanosotros .card-body .card-text .pointer:hover {
+  transform: scale(1.1);
 }
 .tarjetanosotros .nosotroslocal img {
   max-width: 100%;

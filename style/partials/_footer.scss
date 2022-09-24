@@ -1,4 +1,4 @@
-.footer1{
+.footer1 {
 
     .whatsapp {
         display: flex;
@@ -10,48 +10,71 @@
         line-height: 55px;
         bottom: 55px;
         max-width: 100%;
+
         >a {
             color: green;
             text-decoration: none;
             font-size: 18px;
 
-            }
+        }
     }
+
     .copy {
+
         font-size: 12px;
         text-align: center;
         padding-top: 50px;
-        background-color:$secondarycolor;
+        background-color: $secondarycolor;
         color: white;
-        
-    }    
-    @media screen and (max-width:480px) {
+
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    .footer1 {
         .whatsapp {
             display: flex;
             position: fixed;
-            
+        }
+    }
+
+    .copy {
+        max-width: 100%;
+        
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .footer1 {
+        .whatsapp {
+            display: flex;
+            position: fixed;
            
+
         }
 
-       
     }
-    @media screen and (max-width:768px) {
-        .whatsapp {
-            display: flex;
-            position: fixed;
-            
+
+    .copy {
+        max-width: 100%;
+
     }
 }
-     
-}
+
+
 @mixin textos {
     font-family: sans-serif;
     font-weight: 600;
     font-style: oblique;
 }
-.footer1 .whatsapp a{
+
+.footer1 .whatsapp a {
     @include textos;
 }
-.footer1 .copy{
+
+.footer1 .copy {
     @include textos;
 }

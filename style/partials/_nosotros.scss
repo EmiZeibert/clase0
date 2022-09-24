@@ -12,15 +12,17 @@
         
 
         .card-text {
-            max-width: 100%;
             font-family: $fontSans;
             font-weight: 600;
             font-size: 20px;
             color: $secondarycolor;
             background: linear-gradient(159deg, rgb(212, 210, 210) 20%, rgba(15, 161, 255, 0.958420868347339) 70%, rgb(223, 221, 221) 10%);
             width: 500px;
-
-
+            max-width: 100%;
+            .pointer{
+                &:hover {
+                    transform: scale(1.1);
+            }}
         }
     }
 
